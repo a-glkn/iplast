@@ -1,0 +1,165 @@
+.footer
+    padding-top: 27px
+    background-color: #E8E8E8
+    .logo
+        width: 168px
+        svg
+            width: 100%
+            height: auto
+            user-select: none
+    .menus
+        display: flex
+        justify-content: space-between
+    .mob-contacts
+        display: none
+        text-align: left
+    nav
+        ul
+            li
+                font-family: 'Arial'
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 23px
+                color: #4C4C4C
+                margin-bottom: 14px
+                &:last-child
+                    margin-bottom: 0
+                a
+                    font-size: 14.9px
+                    color: #4C4C4C
+                    line-height: 15px
+                    font-family: $headfont
+                    font-style: normal
+                    font-weight: 400
+                    text-decoration: underline
+                    &:hover
+                        text-decoration: none
+    .mail
+        margin-bottom: 1px
+        text-align: right
+        a
+            font-family: $headfont
+            font-style: normal
+            font-weight: 400
+            font-size: 17.2px
+            line-height: 21px
+            color: #000000
+            text-decoration: underline
+            &:hover
+                text-decoration: none
+
+    .call
+        text-align: right
+        a
+            font-family: $headfont
+            font-style: normal
+            font-weight: 400
+            font-size: 13.9px
+            line-height: 17px
+            color: #FF0000
+            text-decoration: underline
+            &:hover
+                text-decoration: none
+
+    .soc
+        margin-top: 50px
+        justify-content: flex-end
+        display: flex
+        li
+            a
+                width: 31px
+                height: 31px
+                border-radius: 50%
+                border: 1px solid #9D9D9D
+                display: flex
+                transition: .3s ease
+                svg
+                    width: 16px
+                    margin: auto
+                &:hover
+                    border-color: $accent
+
+    &-copyright
+        margin-top: 36px
+        background-color: #B2B2B2
+        text-align: center
+        padding-top: 25px
+        padding-bottom: 25px
+        color: #fff
+        font-family: $headfont
+        font-style: normal
+        font-weight: 400
+        font-size: 14.9px
+        line-height: 15px
+        .copyright
+            a
+                font-family: $headfont
+                font-style: normal
+                font-weight: 400
+                font-size: 14.9px
+                line-height: 15px
+                color: #FFFFFF
+                text-decoration: underline
+                &:hover
+                    text-decoration: none
+
+
++media-breakpoint-down(xl)
+    .footer 
+        nav 
+            ul 
+                li 
+                    a
+                        font-size: 12px
++media-breakpoint-down(lg)
+
+    .footer 
+        &-copyright
+            margin-top: 27px
+        .menus
+            flex-direction: column
+            nav
+                &:last-child
+                    margin-top: 20px
+        .col-contacts
+            display: none
+
+        .mob-contacts
+            display: block
+
+        .mail
+            margin-top: 32px
+            text-align: left
+            a
+                font-size: 14px
+
+        .call
+            text-align: left
+            a
+                font-size: 12px
+        
+        nav
+            ul
+                li
+                    margin-bottom: 6.5px
+
+        .soc
+            justify-content: flex-start
+            li
+
+
++media-breakpoint-down(md)
+    .footer 
+        .logo
+            width: 120px
+
+        .soc
+            margin-top: 30px
+
+        &-copyright
+            font-size: 12px
+            line-height: 12px
+            .copyright
+                a
+                    font-size: 12px

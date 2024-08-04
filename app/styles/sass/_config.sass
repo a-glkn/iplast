@@ -1,0 +1,82 @@
+// USER VARIABLES SECTION
+$accent: #FF0000 // Accent Color
+$fontsize: 14px // Body Font Size
+$textcolor: #000000 // Text Color
+$lineheight: 1.5 // Document Line Height
+$userfont: 'Inter', sans-serif // User Font Family
+$headfont: 'PlumbC', arial 
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px
+$gutter: $grid-gutter-width
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1260px)
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1200px)
+
+// IMPORT SECTION
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+@import "node_modules/swiper/swiper-bundle"
+
+// FONTS LOAD SECTION
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap')
+
+@font-face 
+	font-family: 'PlumbC'
+	src: local('PlumbC-Regular')
+	src: url('../fonts/PlumbC.woff2') format('woff2')
+	src: url('../fonts/PlumbC.woff') format('woff')
+	src: url('../fonts/PlumbC.ttf') format('truetype')
+	font-weight: 400
+	font-style: normal
+
+@font-face 
+	font-family: 'PlumbC'
+	src: local('PlumbC-Bold')
+	src: url('../fonts/PlumbC-Bold.woff2') format('woff2')
+	src: url('../fonts/PlumbC-Bold.woff') format('woff')
+	src: url('../fonts/PlumbC-Bold.ttf') format('truetype')
+	font-weight: 700
+	font-style: normal
+
+// GENERAL CSS SETTINGS
+
+
+::placeholder
+	color: #C4C4C4
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	padding-top: 159px
+
+input[type="date"]::-webkit-inner-spin-button, input[type="date"]::-webkit-calendar-picker-indicator
+	opacity: 0
+
+ul, ol
+	list-style: none
+	margin: 0
+	padding: 0
+
+
++media-breakpoint-down(xl)
+	body
+		padding-top: 49px

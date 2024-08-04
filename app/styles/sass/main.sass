@@ -1,0 +1,352 @@
+@use 'sass:math'
+@use 'sass:color'
+
+@import config
+@import 'blocks/**/*'
+
+
+.intro-slider
+    position: relative
+    &-inner
+        overflow: hidden
+    &__item
+        position: relative
+        img
+            max-width: 100%
+            height: auto
+        .btn
+            margin-top: 50px
+            width: auto
+            margin-bottom: 5px
+
+        .semi-title
+            margin-top: 20px
+
+    &__pagination
+        height: 5px
+        position: absolute
+        width: 580px !important
+        left: auto !important
+        right: 0 !important
+        bottom: 0 !important
+        z-index: 10
+        display: flex
+        justify-content: center
+        .swiper-pagination-bullet
+            background-color: #D9D9D9
+            border-radius: 32px
+            width: 30px
+            height: 5px
+            margin: 0 3px !important
+            opacity: 1 !important
+            cursor: pointer
+            &-active
+                cursor: default
+                background-color: $accent
+
+    .swiper-notification
+        display: none
+
+    .swiper-button-prev, .swiper-button-next
+        width: 40px
+        height: 40px
+        top: 50% !important
+        margin-top: -20px
+        opacity: 1 !important
+        &:after
+            display: none
+
+        &.swiper-button-disabled
+            display: none 
+
+    .swiper-button-prev
+        position: absolute
+        left: -50px !important
+        z-index: 10
+        svg
+            transform: rotate(180deg)
+
+    .swiper-button-next
+        position: absolute
+        right: -50px !important
+        z-index: 10
+
+.section-intro
+    padding-top: 140px
+    padding-bottom: 120px
+
+.section-service
+    .heading
+        margin-bottom: 50px
+
+.section-map
+    .heading
+        margin-bottom: 40px
+    .geo-icon
+        margin-bottom: 50px
+        &:last-child
+            margin-bottom: 0
+
+    .map
+        overflow: hidden
+        border-radius: 20px
+        img
+            max-width: 100%
+            height: auto
+
+.product-slider
+    position: relative
+    padding-bottom: 90px
+    &-inner
+        overflow: hidden
+    &__pagination
+        display: none
+
+    .swiper-button-prev, .swiper-button-next
+        width: 40px
+        height: 40px
+        top: auto !important
+        bottom: 0 !important
+        opacity: 1 !important
+        position: absolute
+        &:after
+            display: none
+
+    .swiper-button-prev
+        left: 50% !important
+        margin-left: -52px
+        z-index: 10
+        svg
+            transform: rotate(180deg)
+
+    .swiper-button-next
+        left: 50% !important
+        margin-left: 12px
+        right: 0 !important
+        z-index: 10
+
+.section-using
+    .heading
+        margin-bottom: 50px
+    .tabs-mob
+        display: none
+    .tabs
+        &-header
+            display: flex
+            justify-content: space-between
+            margin-bottom: 50px
+            &__item
+                font-style: normal
+                font-weight: 500
+                font-size: 24px
+                line-height: 1.2
+                color: #000000
+                transition: .3s ease
+                cursor: pointer
+                &:hover
+                    color: #FF0000
+                &.active
+                    cursor: default
+                    color: #FF0000
+                    text-decoration: underline
+
+                    
+
+        &-content
+            &__item
+                &.active
+
+.section-call
+    padding-top: 60px
+    padding-bottom: 34px
+    .heading
+        margin-top: 80px
+    .form-block
+        border: 1px solid #FF0000
+        padding: 53px 56px
+        border-radius: 20px
+
+    .heading-mob
+        display: none
+
+.section-news
+    .row-heading
+        margin-bottom: 50px
+        .col-btn
+            text-align: right
+
+    .small-card
+        margin-bottom: 17.5px
+        &:last-child
+            margin-bottom: 0
+
+    .row-mob-btn
+        display: none
+
++media-breakpoint-down(xl)
+    .section-intro
+        padding-top: 80px
+        padding-bottom: 100px
+    .section-map
+        .geo-icon
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+
+    .section-using 
+        .tabs
+            &-header
+                &__item
+                    font-size: 20px
+
+    .intro-slider 
+        &__pagination
+            width: 460px !important
++media-breakpoint-down(lg)
+    .section-map
+        .geo-icon
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0
+
+        .map
+            margin-top: 30px
+
+    .intro-slider 
+        padding-bottom: 45px
+        .swiper-button-next, .swiper-button-prev
+            width: 20px
+            height: 20px
+            margin-top: 0 !important
+            bottom: 120px !important
+            top: auto !important
+
+        .swiper-button-next
+            right: 16px !important
+        .swiper-button-prev
+            left: 16px !important
+        &__pagination
+            top: auto !important
+            bottom: 0 !important
+            width: 100% !important
+
+    .section-call 
+        .heading
+            margin-top: 0
+    .section-news
+        .row-heading
+            margin-bottom: 30px
+        .col-btn
+            display: none
+        .row-mob-btn
+            margin-top: 20px
+            display: flex
+            text-align: center
+        .news-card
+            margin-bottom: 10px
+
+        .small-card
+            display: none
+            margin-bottom: 10px
+            &:nth-child(1), &:nth-child(2)
+                display: flex
+    .section-service
+        .service
+            margin-bottom: 20px
+
+    .section-call 
+        .heading-mob
+            display: block
+            margin-bottom: 30px
+        .heading-desk
+            display: none
+
+    .section-map 
+        .heading
+            margin-bottom: 30px
+
+    .section-using 
+        .heading
+            margin-bottom: 30px
+
+    .section-service 
+        .heading
+            margin-bottom: 30px
++media-breakpoint-down(md)
+    .section-intro
+        padding-top: 50px
+        padding-bottom: 50px
+    .section-call 
+        .form-block
+            padding: 20px 15px
+    .intro-slider
+        &__pagination
+            height: 3px
+            .swiper-pagination-bullet
+                width: 15px
+                height: 3px
+                margin: 0 2px !important
+
+        &__item 
+            img
+                margin-top: 40px
+            .btn
+                margin-top: 40px
+
+    .product-slider 
+        padding-bottom: 23px
+        .swiper-button-prev, .swiper-button-next
+            display: none !important
+        .swiper-notification
+            display: none !important
+        &__pagination
+            height: 3px
+            position: absolute
+            width: 100% !important
+            left: auto !important
+            right: 0 !important
+            bottom: 0 !important
+            z-index: 10
+            display: flex !important
+            justify-content: center
+            .swiper-pagination-bullet
+                background-color: #D9D9D9
+                border-radius: 32px
+                width: 15px
+                height: 3px
+                margin: 0 2px !important
+                opacity: 1 !important
+                cursor: pointer
+                &-active
+                    cursor: default
+                    background-color: $accent
+    .section-using
+        .tabs-desktop
+            display: none
+
+        .tabs-mob
+            display: block
+
+        .tabs-header__item
+            margin-bottom: 30px
+            font-size: 14px
+            display: flex
+            svg
+                margin-left: 10px
+                path
+                    transition: .3s ease
+            span, svg
+                margin-top: auto
+                margin-bottom: auto
+            &.active
+                text-decoration: none
+                svg
+                    transform: rotate(90deg)
+                    path
+                        fill: $accent
+        .product-slider
+            margin-top: 30px
+            margin-bottom: 30px
++media-breakpoint-down(sm)
+        
+    

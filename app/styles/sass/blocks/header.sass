@@ -1,0 +1,527 @@
+.header
+    height: 159px
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background-color: #F2F2F2
+    z-index: 100
+    &__contacts
+        text-align: right
+        margin: auto 0
+        margin-left: 75px
+        .mail
+            font-family: $headfont
+            font-style: normal
+            font-weight: 700
+            font-size: 14px
+            line-height: 1.5
+            a
+                color: #000000
+                text-decoration: none
+                transition: .3s ease
+                &:hover
+                    color: $accent
+        .call
+            a
+                font-family: $headfont
+                font-style: normal
+                font-weight: 400
+                font-size: 13.9px
+                line-height: 1.22
+                color: #FF0000
+                text-decoration: underline
+                &:hover
+                    text-decoration: none
+    .logo
+        min-width: 177px
+        max-width: 177px
+        margin: auto 0
+        svg
+            width: 100%
+            height: auto
+
+    .mob-funcs
+        display: none
+        width: 100px
+        justify-content: space-between
+        position: absolute
+        right: 70px
+        top: 14px
+        > *
+            margin-top: auto
+            margin-bottom: auto
+            cursor: pointer
+
+    .mob-cart
+        position: relative
+        text-decoration: none
+        div
+            position: absolute
+            right: -6px
+            top: -1px
+            width: 12px
+            height: 12px
+            border-radius: 50%
+            background-color: #fff
+            border: 1px solid #FF0000
+            font-family: $headfont
+            font-style: normal
+            font-weight: 400
+            font-size: 6px
+            line-height: 12px
+            text-align: center
+            color: #4C4C4C
+    .menu-toggler
+        display: none
+        position: absolute
+        top: 12px
+        right: 0
+        cursor: pointer
+    .purpose
+        font-family: $headfont
+        font-style: normal
+        font-weight: 400
+        font-size: 11px
+        line-height: 1
+        color: #4C4C4C
+        margin: auto 0
+        margin-left: 25px
+        white-space: nowrap
+    .search-form
+        position: relative
+        margin: auto 0
+        margin-left: 35px
+        &:after
+            content: ''
+            width: 1px
+            height: 22px
+            background-color: #CBCBCB
+            position: absolute
+            display: block
+            right: 39px
+            top: 9px
+        input
+            padding-left: 12px
+            padding-right: 52px
+            width: 275px
+            height: 40px
+            border-radius: 5px
+            border: 1px solid #E6E6E6
+        button
+            position: absolute
+            right: 13px
+            top: 12px
+            width: 16px
+            height: 16px
+            border: 0
+            background-color: transparent
+            background-repeat: no-repeat
+            background-position: center
+            background-image: url(../images/dist/zoom.svg)
+    .geo
+        display: flex
+        margin-left: 35px
+        svg, span
+            margin: auto 0
+        span
+            margin-left: 4px
+            font-family: $headfont
+            font-style: normal
+            font-weight: 400
+            font-size: 12.90px
+            line-height: 1.24
+            color: #000000
+            white-space: nowrap
+
+    &__cart
+        display: flex
+        min-width: 96.5px
+        max-width: 96.5px
+        margin: auto 0
+        margin-left: 76px
+        justify-content: space-between
+        &-icon
+
+        &-content
+            text-align: right
+            a
+                font-family: $headfont
+                font-style: normal
+                font-weight: 400
+                font-size: 13.3px
+                line-height: 1.2
+                color: #A0A0A0
+                text-decoration: underline
+                transition: .3s ease
+                &:hover
+                    text-decoration: none
+                    color: $accent
+            div
+                font-family: $headfont
+                font-style: normal
+                font-weight: 400
+                font-size: 12.5px
+                line-height: 1.28
+                color: #000000      
+
+    &-top
+        display: flex
+        justify-content: space-between
+        padding-top: 17px
+        padding-bottom: 23px
+        position: relative
+    &-bottom
+        border-top: 1px solid #CBCBCB
+        padding-top: 26px
+        >nav
+            width: 100%
+            >ul
+                width: 100%
+                justify-content: space-between
+                display: flex
+                >li
+                    padding-bottom: 21px
+                    >a
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 15.5px
+                        line-height: 1.225
+                        color: #333333
+                        text-decoration: none
+                        text-transform: uppercase
+                        transition: .3s ease
+                        &:hover
+                            text-decoration: underline
+                            color: $accent
+                    &.current
+                        >a
+                            text-decoration: underline
+                            color: $accent
+
+                    &.catalog
+                        &:hover
+                            >a
+                                text-decoration: underline
+                                color: $accent
+                            .catalog-menu-wrapper
+                                display: block
+
+
+
+.catalog-menu-wrapper
+    display: none
+    width: 100%
+    position: fixed
+    top: 159px
+    left: 0
+    z-index: 100
+    background-color: #F2F2F2
+    padding-top: 50px
+    padding-bottom: 50px
+
+.catalog-menu
+    display: flex
+    justify-content: space-between
+    &__item
+        border: 1px solid #D8D8D8
+        border-radius: 20px
+        width: calc(20% - 8px)
+        overflow: hidden
+        background-color: #fff
+        transition: .3s ease
+        position: relative
+        &-img
+            height: 223px
+            padding-top: 30px
+            text-align: center
+            img
+                max-width: 100%
+                height: auto
+        &-heading
+            padding-left: 30px
+            padding-right: 30px
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 17px
+            text-transform: uppercase
+            color: #333333
+            height: 95px
+            border-top: 1px solid #D8D8D8
+            padding-top: 30px   
+            a
+                text-decoration: none
+                color: #333333
+                transition: .3s ease
+                display: inline-block
+                &:hover
+                    color: $accent
+        &-content
+            opacity: 0
+            transition: .3s ease
+            position: absolute
+            padding-left: 30px
+            padding-right: 30px
+            padding-top: 25px
+            ul
+                li
+                    margin-bottom: 10px
+                    padding-left: 15px
+                    position: relative
+                    &:before
+                        content: ''
+                        display: block
+                        width: 9.5px
+                        height: 9.5px
+                        background-repeat: no-repeat
+                        background-position: center
+                        background-image: url(../images/dist/arr.svg)
+                        position: absolute
+                        left: 0
+                        top: 50%
+                        margin-top: -4.75px
+                    &:last-child
+                        margin-bottom: 0
+                    a
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 12px
+                        line-height: 1.25
+                        color: #333333
+                        text-decoration: none
+                        transition: .3s ease                        
+                        &:hover
+                            color: $accent
+
+
+
+        &:hover
+            border-color: $accent
+            cursor: default
+            .catalog-menu
+                &__item
+                    &-img
+                        display: none
+
+                    &-heading
+                        border: 0
+                        border-bottom: 1px solid #D8D8D8
+
+                    &-content
+                        opacity: 1
+                        
+
+.catalog-menu-mob-wrapper
+    position: fixed
+    width: 100%
+    height: calc(100vh - 49px)
+    background: rgba(155, 149, 149, 0.52)
+    top: 49px
+    right: 0
+    display: none
+    z-index: 100
+    
+
+.catalog-menu-mob
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 100
+    background-color: #F2F2F2
+    overflow-y: auto
+    padding: 16px
+    height: calc(100vh - 49px)
+    width: calc(100% - 82px)
+    &__item
+        border-radius: 15px
+        border: 1px solid #FF0000
+        background-color: #fff
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0
+        &-heading
+            font-style: normal
+            font-weight: 400
+            font-size: 10px
+            line-height: 12px
+            color: #333333
+            text-transform: uppercase
+            padding-left: 22px
+            padding-right: 22px
+            padding-top: 21px
+            padding-bottom: 21px
+            a
+                text-decoration: none
+                color: #333333
+        &-content
+            display: none
+            padding-right: 30px
+            padding-left: 30px
+            text-align: right
+            padding-bottom: 20px
+            border-top: 1px solid #D8D8D8
+            ul
+                display: inline-block
+                li
+                    margin-bottom: 8px
+                    padding-left: 12px
+                    position: relative
+                    text-align: left
+                    &:before
+                        content: ''
+                        display: block
+                        width: 8px
+                        height: 8px
+                        background-repeat: no-repeat
+                        background-position: center
+                        background-image: url(../images/dist/arr.svg)
+                        position: absolute
+                        left: 0
+                        top: 8px
+                    &:last-child
+                        margin-bottom: 0
+                    a
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 10px
+                        line-height: 1.25
+                        color: #333333
+                        text-decoration: none
+                        transition: .3s ease                        
+                        &:hover
+                            color: $accent
+
++media-breakpoint-down(xl)
+    .header
+        .mail
+            font-size: 12px
+        .purpose
+            margin-left: 20px
+        .search-form
+            margin-left: 20px
+            input
+                width: 210px
+        .geo
+            margin-left: 20px
+        &__contacts
+            margin-left: 20px
+        &__cart
+            margin-left: 20px
+        &-bottom 
+            >nav 
+                >ul 
+                    >li 
+                        >a
+                            font-size: 14px
+
+
+    .catalog-menu
+        &__item
+            &-img
+                padding-left: 20px
+                padding-right: 20px
+            &-heading
+                padding-left: 20px
+                padding-right: 20px
+                font-size: 12px
+            &-content
+                padding-left: 20px
+                padding-right: 20px
+                ul
+                    li
+                        margin-bottom: 5px
+                        a
+                            font-size: 10px
+
++media-breakpoint-down(lg)
+    .header
+        height: 49px
+        &__contacts
+            display: none
+        &__cart
+            display: none
+
+        &-top
+            padding-top: 0
+            padding-bottom: 0
+        &-bottom
+            border: 0
+            nav
+                display: none
+
+        .logo
+            min-width: 70px
+            max-width: 70px
+            position: absolute
+            left: 0
+            top: 13.5px
+
+        .purpose
+            font-size: 8px
+            margin-left: 12px
+            position: absolute
+            left: 70px  
+            top: 18px
+
+        .search-form
+            display: none
+
+        .geo
+            display: none
+        
+        .mob-funcs
+            display: flex
+
+        .menu-toggler
+            display: block
+
+
+    .menu-openned
+        overflow: hidden
+        .catalog-menu-mob-wrapper
+            display: block
+            top: 49px
+
+        .catalog-menu-mob
+            &__item
+                &-content
+                    padding-top: 14px
+
+                &.openned
+                    .catalog-menu-mob
+                        &__item
+                            &-heading
+                                padding-top: 16px
+                                padding-bottom: 16px
+                            &-content
+                                display: block
+                
+                
+    .mob-search-openned
+        .search-form
+            position: fixed
+            top: 49px
+            left: 0
+            width: 100%
+            margin: 0
+            height: 54px
+            padding: 12px 10px
+            background: #F2F2F2
+            display: block
+            &:after
+                display: none
+            input
+                padding-left: 37px
+                padding-right: 20px
+                width: 100%
+                height: 30px
+                border-radius: 15px
+                border: 1px solid #F2F2F2
+                font-size: 10px
+            button
+                right: auto
+                top: 22px
+                left: 26.5px
+                width: 10px
+                height: 10px
