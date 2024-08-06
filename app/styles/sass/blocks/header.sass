@@ -122,8 +122,14 @@
     .geo
         display: flex
         margin-left: 35px
+        position: relative
+        top: 2px
+        &__header
+            display: flex
+            margin: auto 0
         svg, span
             margin: auto 0
+            cursor: default
         span
             margin-left: 4px
             font-family: $headfont
@@ -134,6 +140,38 @@
             color: #000000
             white-space: nowrap
 
+        &__content
+            display: none
+            position: absolute
+            padding: 15px
+            background: white
+            left: 0
+            top: 42px
+            border-radius: 4px
+            box-shadow: 0px 4px 18px -12px
+            z-index: 101
+            a
+                display: block
+                margin-bottom: 5px
+                white-space: nowrap
+                transition: .3s ease
+                text-decoration: none
+                color: #000
+                font-family: $headfont
+                font-size: 12.9px
+                font-style: normal
+                font-weight: 400
+                line-height: 1.24
+                &:last-child
+                    margin-bottom: 0
+
+                &:hover
+                    color: $accent
+
+        &:hover
+            .geo
+                &__content
+                    display: block
     &__cart
         display: flex
         min-width: 96.5px
