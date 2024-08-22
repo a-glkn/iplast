@@ -101,5 +101,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    if( document.querySelector('.swiper-thumb') && document.querySelector('.swiper-gallery') ) {
+
+        var swiperThumb = new Swiper(".swiper-thumb", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            freeMode: false,
+            watchSlidesProgress: true,
+        });
+        var swiperGallery = new Swiper(".swiper-gallery", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+              nextEl: ".product-item-slider .swiper-button-next",
+              prevEl: ".product-item-slider .swiper-button-prev",
+            },
+            thumbs: {
+              swiper: swiperThumb
+            }
+        });
+
+    }
     
 });

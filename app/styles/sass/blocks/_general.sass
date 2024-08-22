@@ -16,7 +16,8 @@
         font-size: 50px
         line-height: 1
 
-        
+    &_md
+        font-size: 32px
 
 .semi-title
     font-style: normal 
@@ -39,6 +40,7 @@
     width: 100%
     border: 0
     height: 60px
+    white-space: nowrap
     &_icon
         display: inline-flex
         svg
@@ -46,6 +48,23 @@
             margin-right: 10px
         span
             margin: auto 0
+            white-space: nowrap
+        &_l
+            span
+                margin-left: auto
+            svg
+                margin-right: 0
+                margin-left: 10px
+                margin-right: auto
+
+
+    &_outline
+        border: 1px solid #FF0000
+        background: transparent
+        box-shadow: none
+        color: #FF0000
+
+
 
 
 .btn-more
@@ -214,6 +233,84 @@
                 margin-top: auto
                 margin-bottom: auto
 
+
+
+.colors
+    display: flex
+    li
+        margin-right: 6px
+        cursor: pointer
+        span
+            width: 30px
+            height: 30px
+            display: block
+            border-radius: 50%
+
+        &.active
+            cursor: default
+            border-radius: 50%
+            border: 1px solid #FF0000
+            span
+                margin: 1px
+                width: 26px
+                height: 26px
+
+.color-item
+    display: flex
+    span
+        width: 28px
+        height: 28px
+        border-radius: 50%
+        margin-right: 10px
+        margin-top: auto
+        margin-bottom: auto
+    div
+        font-style: normal
+        font-weight: 400
+        font-size: 17.6562px
+        line-height: 26px
+        color: #4C4C4C
+        margin-top: auto
+        margin-bottom: auto
+
+
+.scope
+    padding: 20px
+    display: flex
+    text-decoration: none 
+    border: 1px solid #D8D8D8 
+    border-radius: 20px
+    transition: .3s ease
+    span
+        font-style: normal
+        font-weight: 400
+        font-size: 19px
+        line-height: 24px
+        color: #000000
+
+    svg
+        margin-left: 10px
+
+    &:hover
+        border-color: $accent
+
+.text-block
+    background: #FFFFFF
+    border: 1px solid #D8D8D8
+    border-radius: 20px
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 1.2
+    color: #000000
+    padding: 20px
+    p
+        margin-top: 1em
+        &:first-child
+            margin-top: 0
+
+        &:last-child
+            margin-bottom: 0
 
 
 .small-card
@@ -403,13 +500,252 @@
                 color: $accent
 
 
+.breadcrumbs
+    a
+        font-style: normal
+        font-weight: 400
+        font-size: 13px
+        line-height: 1.538
+        color: #999999
+        text-decoration: none
+    > *
+        &:after
+            content: '—'
+            display: inline-block
+            margin-left: 5px    
+            margin-right: 2px
+            color: #DDDDDD
+        &:last-child
+            &:after
+                display: none
 
+.table
+    width: 100%
+    position: relative
+    overflow-x: auto
+    table
+        width: 100%
+        border-collapse: collapse
+        border-radius: 20px
+        overflow: hidden
+        border-collapse: separate
+        border-spacing: 0
+        border: 1px solid #D8D8D8
+        tr
+            td, th
+                padding: 28px 40px
+                border-bottom: 1px solid #D8D8D8
+
+            &:last-child
+                td, th
+                    border-bottom: 0
+
+            th
+                border-right: 1px solid #D8D8D8
+                font-style: normal
+                font-weight: 600
+                font-size: 20px
+                line-height: 1
+                color: #333333
+
+            td
+                font-style: normal
+                font-weight: 400
+                font-size: 20px
+                line-height: 1
+                color: #333333
+
+    &_top-h
+        table
+            tr
+                td, th
+                    padding: 20px
+                th
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 15px
+                    line-height: 1.133
+                    color: #333333
+                    white-space: nowrap
+
+                td
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 12px
+                    line-height: 17px
+                    color: #333333
+                    border-right: 1px solid #D8D8D8
+                    &:last-child
+                        border-right: 0
+                &:first-child
+                    th:last-child
+                        border-right: 0
+
+.item
+    border: 1px solid #E6E6E6
+    border-radius: 20px
+    background-color: #fff
+    overflow: hidden
+    position: relative
+    padding: 20px
+    padding-bottom: 117px
+    &__img
+        text-align: center
+        display: block
+        padding-bottom: 10px
+        border-bottom: 1px solid #E6E6E6
+        img
+            max-width: 100%
+            height: auto
+    &__art
+        margin-top: 17px
+        font-family: $headfont
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 1
+        color: #808080
+
+    &__chars
+        margin-top: 20px
+        &-item
+            font-style: normal
+            font-weight: 400
+            font-size: 15px
+            line-height: 1.133
+            color: #333333
+            display: flex
+            margin-bottom: 3px
+            &:last-child
+                margin-bottom: 0
+            div
+                margin-top: auto
+                margin-bottom: auto
+            span
+                font-weight: 500
+                margin-top: auto
+                margin-bottom: auto
+
+            svg
+                margin-right: 5px
+                margin-top: auto
+                margin-bottom: auto
+    &__title
+        text-decoration: none
+        margin-top: 10px
+        font-family: $headfont
+        font-style: normal
+        font-weight: 700
+        display: block
+        font-size: 14px
+        line-height: 1
+        text-decoration: none
+        color: #000
+        transition: .3s ease
+        &:hover
+            color: $accent
+    &__price
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 17px
+        color: #000000
+        position: absolute
+        width: calc(100% - 40px)
+        left: 20px
+        bottom: 70px
+    .btn
+        position: absolute
+        width: calc(100% - 40px)
+        bottom: 20px
+        left: 20px
+        height: 39px
+        font-size: 16px
+
+.product-item-slider
+    .photo-360
+        position: absolute
+        bottom: 22px
+        left: 50%
+        transform: translateX(-50%)
+        width: 140px
+        height: 64px
+        border: 1px solid #FF0000
+        border-radius: 20px
+        text-align: center
+        cursor: pointer
+        span
+            display: block
+            font-style: normal
+            font-weight: 400
+            font-size: 12px
+            line-height: 1.41
+            margin-top: 12px
+            margin-bottom: 5px
+
+    .swiper-button-prev, .swiper-button-next
+        border-radius: 50%
+        border: 1px solid #FF0000
+        height: 40px
+        width: 40px
+        position: absolute
+        margin-left: 0 !important
+        top: auto !important
+        bottom: 50px !important
+        &:after
+            display: none
+
+    .swiper-button-prev
+        left: 0 !important
+
+    .swiper-button-next
+        transform: rotate(180deg)
+        left: auto !important
+        right: 0 !important
+
+.swiper-gallery
+    border: 1px solid #D8D8D8
+    border-radius: 20px
+    .swiper-slide
+        padding-left: 30px
+        padding-right: 30px
+        height: 425px
+        display: flex
+        user-select: none
+        img
+            position: relative
+            top: -16.5px
+            margin: auto
+            max-width: 100%
+            max-height: 100%
+            height: auto
+
+.swiper-thumb
+    .swiper-slide
+        border: 1px solid #D8D8D8
+        border-radius: 20px
+        overflow: hidden
+        padding: 5px
+        height: 140px
+        display: flex
+        user-select: none
+        transition: .3s ease
+        cursor: pointer
+        &.swiper-slide-active
+            border-color: $accent
+            cursor: default
+        img
+            margin: auto
+            max-width: 100%
+            max-height: 100%
+            height: auto
 
 +media-breakpoint-down(xl)
     .heading
         &_lg
             font-size: 40px
-
+        &_md
+            font-size: 28px
     .semi-title
         font-size: 24px 
 
@@ -446,11 +782,37 @@
             font-size: 20px
         svg
             width: 16px
+
+    .item__chars
+        &-item
+            font-size: 13px
+
+    .text-block
+        font-size: 18px
+
+    .table 
+        table 
+            tr 
+                th, td
+                    font-size: 18px 
+
+    .table
+        &_top-h 
+            table 
+                tr 
+                    th
+                        font-size: 14px
+
+    .scope
+        padding: 15px
+        span
+            font-size: 17px
 +media-breakpoint-down(lg)
     .heading
         &_lg
             font-size: 32px
-
+        &_md
+            font-size: 24px
     .semi-title
         font-size: 20px 
 
@@ -499,6 +861,23 @@
             max-height: 108px
             span
                 margin: auto
+
+    .table table tr td, .table table tr th 
+        padding: 14px 20px
+        font-size: 16px
+    .color-item
+        span
+            width: 20px
+            height: 20px
+        div
+            font-size: 16px
+    .text-block
+        font-size: 16px
+
+    .scope
+        padding: 10px
+        span
+            font-size: 15px
 +media-breakpoint-down(md)
     .form 
         label
@@ -592,4 +971,9 @@
                 width: 11.5px
                 height: 11.5px
 +media-breakpoint-down(sm)
-    
+    .swiper-gallery 
+        .swiper-slide
+            height: 380px
+    .swiper-thumb 
+        .swiper-slide
+            height: 120px

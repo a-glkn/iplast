@@ -150,12 +150,6 @@
                     color: #FF0000
                     text-decoration: underline
 
-                    
-
-        &-content
-            &__item
-                &.active
-
 .section-call
     padding-top: 60px
     padding-bottom: 34px
@@ -183,6 +177,244 @@
     .row-mob-btn
         display: none
 
+.main
+    padding-top: 50px
+    padding-bottom: 75px
+    .row-top
+        .col-icon
+            text-align: right
+    .row-desc
+        margin-top: 105px
+    .icon-print
+        display: inline-flex
+        font-style: normal
+        font-weight: 500
+        font-size: 15px
+        line-height: 1.1333
+        color: #333333
+        svg
+            margin-right: 5px
+        svg, span
+            margin-top: auto
+            margin-bottom: auto
+
+    .row-product
+        margin-top: 70px
+    .product-meta
+        border: 1px solid #D8D8D8
+        border-radius: 20px
+        &__top
+            padding: 40px
+        .art
+            font-style: normal
+            font-weight: 400
+            font-size: 15px
+            line-height: 1.1333
+            color: #8D8C8C
+            margin-top: 10px
+
+        &__chars
+            display: flex
+            flex-wrap: wrap
+            padding: 30px 40px
+            border-top: 1px solid #D8D8D8
+            border-bottom: 1px solid #D8D8D8
+            &-item
+                font-style: normal
+                font-weight: 400
+                font-size: 15px
+                line-height: 1.133
+                color: #333333
+                min-width: 50%
+                max-width: 50%
+                display: flex
+                div
+                    margin-top: auto
+                    margin-bottom: auto
+                span
+                    font-weight: 500
+                    margin-top: auto
+                    margin-bottom: auto
+
+                svg
+                    margin-right: 5px
+                    margin-top: auto
+                    margin-bottom: auto
+
+        &__price
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            line-height: 0.71
+            color: #000000
+            margin-top: 30px
+
+        &__vat
+            margin-top: 10px
+            font-style: normal
+            font-weight: 400
+            font-size: 12px
+            line-height: 1.41
+            color: #8D8C8C
+
+
+
+        &__bottom
+            padding: 30px 40px 40px
+
+        &__controls
+            margin-top: 20px
+            display: flex
+            justify-content: space-between
+            .btn-buy
+                margin-left: 10px
+                margin-right: 10px
+        &__quantity
+            display: flex
+            min-width: 118px
+            max-width: 118px
+            height: 60px
+            border-radius: 30px
+            background-color: #E8E8E8
+            justify-content: space-between
+            padding-left: 7px
+            padding-right: 7px
+            button
+                width: 14px
+                height: 14px
+                margin-top: auto
+                margin-bottom: auto
+                border: 0
+                position: relative
+                background: transparent
+                svg
+                    position: absolute
+                    top: 0
+                    left: 0
+
+            input
+                width: 100%
+                font-style: normal
+                font-weight: 500
+                font-size: 15px
+                line-height: 17px
+                color: #333333
+                border: 0
+                background-color: transparent
+                -moz-appearance: textfield
+                margin: auto
+                text-align: center
+                &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+                    -webkit-appearance: none
+                    margin: 0
+
+        
+    .product-contacts
+        margin-top: 25px
+        display: flex
+        justify-content: space-between
+        a
+            text-decoration: none
+            font-style: normal
+            font-weight: 500
+            font-size: 15px
+            line-height: 1.133
+            color: #333333
+            display: flex
+            transition: .3s ease
+            svg
+                margin-right: 8px
+            svg, span
+                margin-top: auto
+                margin-bottom: auto
+            &:hover
+                color: $accent
+    .tabs-header
+        display: flex
+        justify-content: space-between
+        padding: 40px
+        border-radius: 20px
+        border: 1px solid #D8D8D8
+        margin-bottom: 20px
+        &__item
+            display: flex
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            line-height: 1.21
+            color: #000000
+            cursor: pointer
+            transition: .3s ease
+            position: relative
+            &:after
+                content: ''
+                display: block
+                width: 1px
+                height: 28px
+                background-color: #D8D8D8
+                position: absolute
+                right: -84px
+                top: 0
+
+            &:last-child
+                &:after
+                    display: none
+            svg
+                path
+                    transition: .3s ease
+            &.active
+                cursor: default
+                color: $accent  
+                svg
+                    path
+                        fill: $accent
+            svg, span
+                margin-top: auto
+                margin-bottom: auto
+            svg
+                margin-left: 10px
+
+    .row-heading
+        font-family: $headfont
+        font-style: normal
+        font-weight: 700
+        font-size: 24px
+        line-height: 1
+        color: #000000
+
+
+    .row-scope
+        margin-top: 55px
+        padding-top: 75px
+        padding-bottom: 75px
+
+        .scopes
+            display: flex
+            flex-wrap: wrap
+
+        .scope
+            margin-right: 10px
+            margin-bottom: 10px
+
+    .row-info
+        padding-top: 75px
+        .text-block
+            margin-bottom: 10px
+        .table
+            margin-bottom: 10px
+
+    .product-item-slider
+        padding-left: 50px
+        padding-right: 50px
+        position: relative
+        .swiper-thumb
+            margin-top: 10px
+
+
+.section-cross-sales
+    .row-heading
+        margin-bottom: 50px
+
 +media-breakpoint-down(xl)
     .section-intro
         padding-top: 80px
@@ -202,6 +434,38 @@
     .intro-slider 
         &__pagination
             width: 460px !important
+
+    .main
+        padding-top: 30px
+        .row-product
+            margin-top: 30px
+        .product-meta
+            &__top
+                padding: 30px
+            &__bottom
+                padding-left: 30px
+                padding-right: 30px
+
+            &__quantity
+                height: 50px
+                max-width: 100px
+                min-width: 100px
+            &__controls
+                .btn
+                    font-size: 14px
+                    padding-left: 20px
+                    padding-right: 20px
+        .product-meta__chars
+            padding-left: 30px
+            padding-right: 30px
+            &-item
+                font-size: 14px
+
+
+        .tabs-header__item
+            font-size: 22px
+            &:after
+                display: none
 +media-breakpoint-down(lg)
     .section-map
         .geo-icon
@@ -272,6 +536,46 @@
     .section-service 
         .heading
             margin-bottom: 30px
+    .main 
+        
+        .product-meta
+            margin-top: 30px
+
+        .tabs-header
+            padding: 20px
+            &__item
+                font-size: 20px
+                &:after
+                    display: none
+
+        .row-scope
+            padding-bottom: 30px
+            padding-top: 30px
+
+        .row-heading
+            font-size: 20px
+
+        .product-item-slider
+            padding: 0
+            .swiper-button-prev
+                left: 20px !important
+            .swiper-button-next
+                right: 20px !important
+            .swiper-button-next, .swiper-button-prev
+                bottom: 340px !important
+
+    .section-cross-sales
+        .item
+            margin-bottom: 30px
+
+    .main
+        .product-meta
+            &__quantity
+                height: 40px
+        .row-info
+            padding-top: 25px
+        .row-desc
+            margin-top: 50px
 +media-breakpoint-down(md)
     .section-intro
         padding-top: 50px
@@ -347,6 +651,48 @@
         .product-slider
             margin-top: 30px
             margin-bottom: 30px
+
+    .main 
+        .row-top 
+            .col-icon
+                margin-top: 20px !important
+                text-align: left
+        .row-heading
+            margin-bottom: 20px
+        .tabs-header
+            overflow-x: auto
+            &__item 
+                font-size: 16px
+                margin-right: 20px
+                svg
+                    display: none
+
+                &:last-child
+                    margin-right: 0
 +media-breakpoint-down(sm)
-        
-    
+    .main 
+        .product-contacts
+            flex-direction: column
+            a
+                margin-bottom: 5px
+                &:last-child
+                    margin-bottom: 0
+        .product-meta
+            &__controls
+                flex-direction: column
+                .btn-buy
+                    margin: 0
+                    margin-top: 10px
+                    margin-bottom: 10px
+
+            &__chars
+                &-item
+                    max-width: 100%
+                    min-width: 100%
+                    margin-bottom: 5px
+                    &:last-child
+                        margin-bottom: 0
+
+        .product-item-slider 
+            .swiper-button-next, .swiper-button-prev
+                bottom: 290px !important
