@@ -321,6 +321,25 @@
     overflow: hidden
     border: 1px solid #D8D8D8
     transition: .3s ease
+    .tags
+        display: flex
+        margin-top: 30px
+        a
+            border-radius: 25px
+            margin-right: 5px
+            border: 1px solid #FF0000
+            font-style: normal
+            font-weight: 300
+            font-size: 10px
+            line-height: 15px
+            padding-left: 13px
+            padding-right: 13px
+            padding-top: 5px
+            padding-bottom: 5px
+            text-align: center
+            color: #FF0000
+            text-decoration: none
+            display: inline-block
     &__arr
         position: absolute
         top: 30px
@@ -332,6 +351,18 @@
         img
             width: 100%
             height: auto
+            height: 100%
+            object-fit: cover
+
+    &__text
+        font-family: 'Arial'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 1.14
+        color: #999999
+        margin-top: 5px
+        min-height: 2.28em
     &__content
         padding-left: 21px
         padding-top: 19px
@@ -351,7 +382,14 @@
         font-weight: 500
         font-size: 16px
         line-height: 1.1875
+        min-height: 2.375em
         color: #000000
+        a
+            text-decoration: none
+            color: #000000
+            transition: .3s ease
+            &:hover
+                color: $accent
     &:hover
         border-color: $accent
                 
@@ -740,6 +778,72 @@
             max-height: 100%
             height: auto
 
+.news-tags
+    display: flex
+    a
+        display: block
+        text-decoration: none
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 160%
+        color: #333333
+        padding: 10px 20px
+        border: 1px solid #D8D8D8
+        border-radius: 100px
+        transition: .3s ease
+        margin-right: 20px
+        margin-bottom: 20px
+        &:hover
+            border-color: $accent
+
+
+.pagination
+    display: flex
+    justify-content: center
+    a, span
+        margin-top: auto
+        margin-bottom: auto
+        text-decoration: none
+        width: 30px
+        height: 30px
+        border: 1px solid #999999
+        font-family: 'Arial'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 16px
+        color: #999999
+        border-radius: 50%
+        text-align: center
+        line-height: 30px
+        margin-left: 5px
+        margin-right: 5px
+    span
+        background-color: #FF0000
+        color: #fff
+    .more
+        color: #999999
+        background-color: #fff
+    .prev, .next
+        width: 40px
+        height: 40px
+        background-color: #fff
+        border: 1px solid #FF0000
+        display: flex
+        svg
+            margin: auto
+    .current
+        border-color: #FF0000
+        width: 40px
+        height: 40px
+        line-height: 40px
+    .prev
+        margin-right: 20px
+    .next
+        margin-left: 20px
+
+
 +media-breakpoint-down(xl)
     .heading
         &_lg
@@ -878,6 +982,16 @@
         padding: 10px
         span
             font-size: 15px
+
+    .news-tags
+        overflow-x: auto
+        a
+            margin-right: 10px
+            margin-bottom: 10px
+            font-size: 14px
+            padding: 5px 10px
+            &:last-child
+                margin-right: 0
 +media-breakpoint-down(md)
     .form 
         label

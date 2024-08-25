@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Iplast</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header-top">
+						<a href="#" class="logo">
+							<img src="images/dist/logo.svg" alt="">
+						</a>
+
+						<div class="purpose">
+							We create industrial<br> plastic packaging
+						</div>
+
+						<form action="#" class="search-form">
+							<input type="text" placeholder="Site search">
+							<button type="submit"></button>
+						</form>
+
+						<div class="geo">
+							<div class="geo__header">
+								<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_167_1302)">
+									<path d="M13.5809 2.78191C12.3594 1.01409 10.4236 0 8.27009 0C6.11665 0 4.1808 1.01409 2.95933 2.78191C1.74386 4.54078 1.46321 6.76757 2.20708 8.73489C2.40605 9.27218 2.72233 9.79415 3.14489 10.2833L7.84418 15.8031C7.95052 15.928 8.10621 16 8.27009 16C8.43402 16 8.58972 15.9281 8.69599 15.8031L13.394 10.2847C13.8185 9.7928 14.1343 9.27139 14.3316 8.73846C15.077 6.76757 14.7964 4.54078 13.5809 2.78191ZM13.284 8.34665C13.1319 8.75785 12.8834 9.16437 12.5461 9.55538C12.5452 9.55637 12.5442 9.55729 12.5435 9.5584L8.27009 14.5777L3.99411 9.55526C3.65695 9.16455 3.40855 8.75809 3.25489 8.34295C2.6397 6.71588 2.87318 4.87478 3.87961 3.41818C4.88921 1.95694 6.48958 1.11887 8.27009 1.11887C10.0506 1.11887 11.6508 1.9569 12.6604 3.41818C13.6671 4.87478 13.9007 6.71588 13.284 8.34665Z" fill="#4C4C4C"/>
+									<path d="M8.27008 3.31934C6.54271 3.31934 5.13721 4.72465 5.13721 6.45223C5.13721 8.1798 6.54252 9.5851 8.27008 9.5851C9.99765 9.5851 11.4029 8.1798 11.4029 6.45223C11.4029 4.72484 9.99747 3.31934 8.27008 3.31934ZM8.27008 8.4662C7.15958 8.4662 6.25608 7.5627 6.25608 6.45217C6.25608 5.34168 7.15958 4.43819 8.27008 4.43819C9.3806 4.43819 10.2841 5.34168 10.2841 6.45217C10.2841 7.5627 9.3806 8.4662 8.27008 8.4662Z" fill="#4C4C4C"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_167_1302">
+									<rect width="13.5385" height="16" fill="white" transform="translate(1.50073)"/>
+									</clipPath>
+									</defs>
+								</svg>
+									
+								<span>Saudi Arabia</span>
+							</div>
+
+							<div class="geo__content">
+								<a href="/ae/" class="head_region-list-item">United Arab Emirates</a>
+								<a href="/kw/" class="head_region-list-item">Kuwait</a>
+								<a href="/qa/" class="head_region-list-item">Qatar</a>
+								<a href="/om/" class="head_region-list-item">Oman</a>
+								<a href="/bh/" class="head_region-list-item">Bahrain</a>
+								<a href="/in/" class="head_region-list-item">India</a>
+							</div>
+						</div>
+
+						<div class="header__contacts">
+							<div class="mail">
+								<a href="mailto:info@iplastindustries.com">info@iplastindustries.com</a>
+							</div>
+		
+							<div class="call">
+								<a href="#">Request a call</a>
+							</div>
+						</div>
+
+						<div class="header__cart">
+							<div class="header__cart-icon">
+								<svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_167_1323)">
+									<g clip-path="url(#clip1_167_1323)">
+									<g clip-path="url(#clip2_167_1323)">
+									<path d="M19.1019 17.0322C18.2469 17.0322 17.4271 17.3719 16.8223 17.9763C16.2177 18.581 15.8782 19.4009 15.8782 20.2561C15.8782 21.111 16.2177 21.9309 16.8223 22.5356C17.427 23.1402 18.2469 23.4797 19.1019 23.4797C19.9571 23.4797 20.7769 23.1403 21.3816 22.5356C21.986 21.9309 22.3257 21.111 22.3257 20.2561C22.325 19.4011 21.9851 18.5817 21.3807 17.9773C20.7763 17.3728 19.9569 17.0329 19.1019 17.0322ZM19.1019 21.4957C18.7722 21.4957 18.4561 21.3645 18.2231 21.1313C17.9899 20.8981 17.8592 20.582 17.8594 20.2521C17.8596 19.9224 17.9911 19.6063 18.2243 19.3736C18.4578 19.1406 18.7741 19.0101 19.1038 19.0106C19.4336 19.011 19.7495 19.1427 19.9822 19.3762C20.215 19.6098 20.3453 19.9262 20.3446 20.2561C20.3436 20.585 20.2124 20.9004 19.9797 21.1327C19.7467 21.3652 19.4311 21.4957 19.1019 21.4957Z" fill="#FF0000"/>
+									<path d="M24.0835 4.2391H7.54863L7.14662 2.56357C7.00748 1.97502 6.67316 1.45068 6.19855 1.07618C5.7237 0.701483 5.1361 0.498603 4.53139 0.500007H1.44061C1.08668 0.500007 0.759578 0.688878 0.582671 0.99541C0.405711 1.30194 0.405711 1.67943 0.582671 1.98597C0.759631 2.2925 1.08671 2.48137 1.44061 2.48137H4.55404C4.88182 2.48044 5.16664 2.70573 5.24182 3.02487L7.69574 13.3584C7.89372 14.1946 8.36859 14.9396 9.04328 15.4718C9.71774 16.0041 10.5527 16.2927 11.412 16.2906H19.5073C20.3723 16.295 21.2129 16.0044 21.8907 15.4667C22.5684 14.9288 23.0425 14.1764 23.2349 13.3329L25.0634 5.45339C25.132 5.15666 25.0606 4.84473 24.8694 4.60782C24.6782 4.37062 24.388 4.23466 24.0835 4.2391ZM21.2983 12.886C21.2042 13.2899 20.9755 13.6499 20.6502 13.9069C20.3244 14.164 19.9216 14.3029 19.5067 14.301H11.4114C10.9972 14.3017 10.5952 14.1623 10.2702 13.9053C9.94544 13.6485 9.71712 13.2892 9.62257 12.886L8.02336 6.22032H22.8465L21.2983 12.886Z" fill="#FF0000"/>
+									<path d="M11.0637 17.0322C10.2091 17.0343 9.39041 17.3758 8.78761 17.9814C8.18457 18.5871 7.84678 19.4072 7.84839 20.2616C7.84979 21.1161 8.19041 21.9351 8.79556 22.5386C9.4007 23.1421 10.2204 23.4806 11.0751 23.4796C11.9296 23.4789 12.7488 23.139 13.3527 22.5346C13.9567 21.93 14.2959 21.1105 14.2959 20.2561C14.2952 19.3997 13.9541 18.5789 13.3478 17.9742C12.7418 17.3696 11.92 17.0306 11.0637 17.0322ZM11.0637 21.4957C10.734 21.4957 10.4178 21.3645 10.1846 21.1313C9.95164 20.8981 9.82091 20.582 9.82114 20.2521C9.82137 19.9224 9.95257 19.6063 10.186 19.3736C10.4195 19.1406 10.7359 19.0101 11.0655 19.0106C11.3954 19.011 11.7113 19.1427 11.944 19.3762C12.1766 19.6099 12.3071 19.9262 12.3061 20.2561C12.3054 20.585 12.1742 20.9004 11.9412 21.1327C11.7085 21.3653 11.3929 21.4957 11.0637 21.4957Z" fill="#FF0000"/>
+									</g>
+									</g>
+									</g>
+									<defs>
+									<clipPath id="clip0_167_1323">
+									<rect width="25" height="23" fill="white" transform="translate(0.449951 0.5)"/>
+									</clipPath>
+									<clipPath id="clip1_167_1323">
+									<rect width="25" height="23" fill="white" transform="translate(0.449951 0.5)"/>
+									</clipPath>
+									<clipPath id="clip2_167_1323">
+									<rect width="25" height="23" fill="white" transform="translate(0.449951 0.5)"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</div>
+
+							<div class="header__cart-content">
+								<a href="#">Cart</a>
+								<div>0 товаров</div>
+							</div>
+						</div>
+
+						<div class="mob-funcs">
+							<div class="mob-search">
+								<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.625 16.8125C4.3875 16.8125 0.9375 13.3625 0.9375 9.125C0.9375 4.8875 4.3875 1.4375 8.625 1.4375C12.8625 1.4375 16.3125 4.8875 16.3125 9.125C16.3125 13.3625 12.8625 16.8125 8.625 16.8125ZM8.625 2.5625C5.0025 2.5625 2.0625 5.51 2.0625 9.125C2.0625 12.74 5.0025 15.6875 8.625 15.6875C12.2475 15.6875 15.1875 12.74 15.1875 9.125C15.1875 5.51 12.2475 2.5625 8.625 2.5625Z" fill="#333333"/>
+									<path d="M16.5 17.5626C16.3575 17.5626 16.215 17.5101 16.1025 17.3976L14.6025 15.8976C14.385 15.6801 14.385 15.3201 14.6025 15.1026C14.82 14.8851 15.18 14.8851 15.3975 15.1026L16.8975 16.6026C17.115 16.8201 17.115 17.1801 16.8975 17.3976C16.785 17.5101 16.6425 17.5626 16.5 17.5626Z" fill="#333333"/>
+								</svg>
+							</div>
+	
+							<div class="mob-call">
+								<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.0875 17.5625C12.24 17.5625 11.3475 17.36 10.425 16.97C9.525 16.5875 8.6175 16.0625 7.7325 15.425C6.855 14.78 6.0075 14.06 5.205 13.2725C4.41 12.47 3.69 11.6225 3.0525 10.7525C2.4075 9.8525 1.89 8.9525 1.5225 8.0825C1.1325 7.1525 0.9375 6.2525 0.9375 5.405C0.9375 4.82 1.0425 4.265 1.245 3.7475C1.455 3.215 1.7925 2.72 2.25 2.2925C2.8275 1.7225 3.4875 1.4375 4.1925 1.4375C4.485 1.4375 4.785 1.505 5.04 1.625C5.3325 1.76 5.58 1.9625 5.76 2.2325L7.5 4.685C7.6575 4.9025 7.7775 5.1125 7.86 5.3225C7.9575 5.5475 8.01 5.7725 8.01 5.99C8.01 6.275 7.9275 6.5525 7.77 6.815C7.6575 7.0175 7.485 7.235 7.2675 7.4525L6.7575 7.985C6.765 8.0075 6.7725 8.0225 6.78 8.0375C6.87 8.195 7.05 8.465 7.395 8.87C7.7625 9.29 8.1075 9.6725 8.4525 10.025C8.895 10.46 9.2625 10.805 9.6075 11.09C10.035 11.45 10.3125 11.63 10.4775 11.7125L10.4625 11.75L11.01 11.21C11.2425 10.9775 11.4675 10.805 11.685 10.6925C12.0975 10.4375 12.6225 10.3925 13.1475 10.61C13.3425 10.6925 13.5525 10.805 13.7775 10.9625L16.2675 12.7325C16.545 12.92 16.7475 13.16 16.8675 13.445C16.98 13.73 17.0325 13.9925 17.0325 14.255C17.0325 14.615 16.95 14.975 16.7925 15.3125C16.635 15.65 16.44 15.9425 16.1925 16.2125C15.765 16.685 15.3 17.0225 14.76 17.24C14.2425 17.45 13.68 17.5625 13.0875 17.5625ZM4.1925 2.5625C3.78 2.5625 3.3975 2.7425 3.03 3.1025C2.685 3.425 2.445 3.7775 2.295 4.16C2.1375 4.55 2.0625 4.9625 2.0625 5.405C2.0625 6.1025 2.2275 6.86 2.5575 7.64C2.895 8.435 3.3675 9.26 3.9675 10.085C4.5675 10.91 5.25 11.7125 6 12.47C6.75 13.2125 7.56 13.9025 8.3925 14.51C9.2025 15.1025 10.035 15.5825 10.86 15.9275C12.1425 16.475 13.3425 16.6025 14.3325 16.19C14.715 16.0325 15.0525 15.7925 15.36 15.4475C15.5325 15.26 15.6675 15.0575 15.78 14.8175C15.87 14.63 15.915 14.435 15.915 14.24C15.915 14.12 15.8925 14 15.8325 13.865C15.81 13.82 15.765 13.7375 15.6225 13.64L13.1325 11.87C12.9825 11.765 12.8475 11.69 12.72 11.6375C12.555 11.57 12.4875 11.5025 12.2325 11.66C12.0825 11.735 11.9475 11.8475 11.7975 11.9975L11.2275 12.56C10.935 12.845 10.485 12.9125 10.14 12.785L9.9375 12.695C9.63 12.53 9.27 12.275 8.8725 11.9375C8.5125 11.63 8.1225 11.27 7.65 10.805C7.2825 10.43 6.915 10.0325 6.5325 9.59C6.18 9.1775 5.925 8.825 5.7675 8.5325L5.6775 8.3075C5.6325 8.135 5.6175 8.0375 5.6175 7.9325C5.6175 7.6625 5.715 7.4225 5.9025 7.235L6.465 6.65C6.615 6.5 6.7275 6.3575 6.8025 6.23C6.8625 6.1325 6.885 6.05 6.885 5.975C6.885 5.915 6.8625 5.825 6.825 5.735C6.7725 5.615 6.69 5.48 6.585 5.3375L4.845 2.8775C4.77 2.7725 4.68 2.6975 4.5675 2.645C4.4475 2.5925 4.32 2.5625 4.1925 2.5625ZM10.4625 11.7575L10.3425 12.2675L10.545 11.7425C10.5075 11.735 10.4775 11.7425 10.4625 11.7575Z" fill="#333333"/>
+								</svg>
+							</div>
+	
+							<a href="#" class="mob-cart">
+								<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.6425 14.2969H5.65499C4.91249 14.2969 4.19999 13.9819 3.69749 13.4344C3.19499 12.8869 2.94 12.1519 3 11.4094L3.6225 3.93938C3.645 3.70688 3.56249 3.48188 3.40499 3.30938C3.24749 3.13688 3.03 3.04688 2.7975 3.04688H1.5C1.1925 3.04688 0.9375 2.79188 0.9375 2.48438C0.9375 2.17687 1.1925 1.92188 1.5 1.92188H2.805C3.3525 1.92188 3.87 2.15437 4.2375 2.55187C4.44 2.77687 4.59 3.03938 4.6725 3.33188H14.04C14.7975 3.33188 15.495 3.63188 16.005 4.17188C16.5075 4.71938 16.7625 5.43188 16.7025 6.18938L16.2975 11.8144C16.215 13.1869 15.015 14.2969 13.6425 14.2969ZM4.71 4.44937L4.125 11.4994C4.0875 11.9344 4.23 12.3469 4.5225 12.6694C4.815 12.9919 5.22 13.1644 5.65499 13.1644H13.6425C14.4225 13.1644 15.1275 12.5044 15.1875 11.7244L15.5925 6.09938C15.6225 5.65688 15.48 5.23688 15.1875 4.92938C14.895 4.61438 14.49 4.44186 14.0475 4.44186H4.71V4.44937Z" fill="#333333"/>
+									<path d="M12.1875 18.0469C11.3625 18.0469 10.6875 17.3719 10.6875 16.5469C10.6875 15.7219 11.3625 15.0469 12.1875 15.0469C13.0125 15.0469 13.6875 15.7219 13.6875 16.5469C13.6875 17.3719 13.0125 18.0469 12.1875 18.0469ZM12.1875 16.1719C11.9775 16.1719 11.8125 16.3369 11.8125 16.5469C11.8125 16.7569 11.9775 16.9219 12.1875 16.9219C12.3975 16.9219 12.5625 16.7569 12.5625 16.5469C12.5625 16.3369 12.3975 16.1719 12.1875 16.1719Z" fill="#333333"/>
+									<path d="M6.1875 18.0469C5.3625 18.0469 4.6875 17.3719 4.6875 16.5469C4.6875 15.7219 5.3625 15.0469 6.1875 15.0469C7.0125 15.0469 7.6875 15.7219 7.6875 16.5469C7.6875 17.3719 7.0125 18.0469 6.1875 18.0469ZM6.1875 16.1719C5.9775 16.1719 5.8125 16.3369 5.8125 16.5469C5.8125 16.7569 5.9775 16.9219 6.1875 16.9219C6.3975 16.9219 6.5625 16.7569 6.5625 16.5469C6.5625 16.3369 6.3975 16.1719 6.1875 16.1719Z" fill="#333333"/>
+									<path d="M15.75 7.54688H6.75C6.4425 7.54688 6.1875 7.29188 6.1875 6.98438C6.1875 6.67687 6.4425 6.42188 6.75 6.42188H15.75C16.0575 6.42188 16.3125 6.67687 16.3125 6.98438C16.3125 7.29188 16.0575 7.54688 15.75 7.54688Z" fill="#333333"/>
+								</svg>
+	
+								<div>5</div>
+							</a>
+						</div>
+	
+						<div class="menu-toggler">
+							<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<ellipse cx="13" cy="12.5" rx="13" ry="12.5" fill="#FF0000"/>
+								<line x1="8" y1="9.5" x2="18" y2="9.5" stroke="white"/>
+								<line x1="13" y1="12.5" x2="18" y2="12.5" stroke="white"/>
+								<line x1="8" y1="15.5" x2="18" y2="15.5" stroke="white"/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="header-bottom">
+						<nav>
+							<ul>
+								<li class="catalog">
+									<a href="#">Catalogue</a>
+									<div class="catalog-menu-wrapper">
+    <div class="container">
+		<div class="row">
+            <div class="col-lg-12">
+                <div class="catalog-menu">
+	
+                    <div class="catalog-menu__item">
+                        <div class="catalog-menu__item-img">
+                            <img src="images/dist/c2.png" alt="">
+                        </div>
+                
+                        <div class="catalog-menu__item-heading">
+                            <a href="#">Plastic crates</a>
+                        </div>
+                
+                        <div class="catalog-menu__item-content">
+                            <ul>
+                                <li><a href="#">Euro size containers EC</a></li>
+                                <li><a href="#">INSTORE nestable crates</a></li>
+                                <li><a href="#">Components for crates</a></li>
+                                <li><a href="#">Food crates</a></li>
+                                <li><a href="#">Turning nestable crates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="catalog-menu__item">
+                        <div class="catalog-menu__item-img">
+                            <img src="images/dist/c2.png" alt="">
+                        </div>
+                
+                        <div class="catalog-menu__item-heading">
+                            <a href="#">Storage and shelf crates</a>
+                        </div>
+                
+                        <div class="catalog-menu__item-content">
+                            <ul>
+                                <li><a href="#">Euro size containers EC</a></li>
+                                <li><a href="#">INSTORE nestable crates</a></li>
+                                <li><a href="#">Components for crates</a></li>
+                                <li><a href="#">Food crates</a></li>
+                                <li><a href="#">Turning nestable crates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="catalog-menu__item">
+                        <div class="catalog-menu__item-img">
+                            <img src="images/dist/c3.png" alt="">
+                        </div>
+                
+                        <div class="catalog-menu__item-heading">
+                            <a href="#">Plastic pallets</a>
+                        </div>
+                
+                        <div class="catalog-menu__item-content">
+                            <ul>
+                                <li><a href="#">Euro size containers EC</a></li>
+                                <li><a href="#">INSTORE nestable crates</a></li>
+                                <li><a href="#">Components for crates</a></li>
+                                <li><a href="#">Food crates</a></li>
+                                <li><a href="#">Turning nestable crates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="catalog-menu__item">
+                        <div class="catalog-menu__item-img">
+                            <img src="images/dist/c4.png" alt="">
+                        </div>
+                
+                        <div class="catalog-menu__item-heading">
+                            <a href="#">Garbage containers</a>
+                        </div>
+                
+                        <div class="catalog-menu__item-content">
+                            <ul>
+                                <li><a href="#">Euro size containers EC</a></li>
+                                <li><a href="#">INSTORE nestable crates</a></li>
+                                <li><a href="#">Components for crates</a></li>
+                                <li><a href="#">Food crates</a></li>
+                                <li><a href="#">Turning nestable crates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="catalog-menu__item">
+                        <div class="catalog-menu__item-img">
+                            <img src="images/dist/c5.png" alt="">
+                        </div>
+                
+                        <div class="catalog-menu__item-heading">
+                            <a href="#">Collapsible plastic container</a>
+                        </div>
+                
+                        <div class="catalog-menu__item-content">
+                            <ul>
+                                <li><a href="#">Euro size containers EC</a></li>
+                                <li><a href="#">INSTORE nestable crates</a></li>
+                                <li><a href="#">Components for crates</a></li>
+                                <li><a href="#">Food crates</a></li>
+                                <li><a href="#">Turning nestable crates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+								</li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">TEAM</a></li>
+								<li><a href="#">PAYMENTS</a></li>
+								<li><a href="#">DELIVERY</a></li>
+								<li><a href="#">CHOOSE PACKAGING</a></li>
+								<li><a href="#">WHERE TO BUY</a></li>
+								<li><a href="#">NEWS</a></li>
+								<li><a href="#">RESOURSES</a></li>
+								<li><a href="#">CONTACTS</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="catalog-menu-mob-wrapper">
+		<div class="catalog-menu-mob">
+		
+			<div class="catalog-menu-mob__item">
+				<div class="catalog-menu-mob__item-heading">
+					<a href="#">Plastic crates</a>
+				</div>
+		
+				<div class="catalog-menu-mob__item-content">
+					<ul>
+						<li><a href="#">Euro size containers EC</a></li>
+						<li><a href="#">INSTORE nestable crates</a></li>
+						<li><a href="#">Components for crates</a></li>
+						<li><a href="#">Food crates</a></li>
+						<li><a href="#">Turning nestable crates</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="catalog-menu-mob__item">
+				<div class="catalog-menu-mob__item-heading">
+					<a href="#">Storage and shelf crates</a>
+				</div>
+		
+				<div class="catalog-menu-mob__item-content">
+					<ul>
+						<li><a href="#">Euro size containers EC</a></li>
+						<li><a href="#">INSTORE nestable crates</a></li>
+						<li><a href="#">Components for crates</a></li>
+						<li><a href="#">Food crates</a></li>
+						<li><a href="#">Turning nestable crates</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="catalog-menu-mob__item">
+				<div class="catalog-menu-mob__item-heading">
+					<a href="#">Plastic pallets</a>
+				</div>
+		
+				<div class="catalog-menu-mob__item-content">
+					<ul>
+						<li><a href="#">Euro size containers EC</a></li>
+						<li><a href="#">INSTORE nestable crates</a></li>
+						<li><a href="#">Components for crates</a></li>
+						<li><a href="#">Food crates</a></li>
+						<li><a href="#">Turning nestable crates</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="catalog-menu-mob__item">
+				<div class="catalog-menu-mob__item-heading">
+					<a href="#">Garbage containers</a>
+				</div>
+		
+				<div class="catalog-menu-mob__item-content">
+					<ul>
+						<li><a href="#">Euro size containers EC</a></li>
+						<li><a href="#">INSTORE nestable crates</a></li>
+						<li><a href="#">Components for crates</a></li>
+						<li><a href="#">Food crates</a></li>
+						<li><a href="#">Turning nestable crates</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="catalog-menu-mob__item">
+				<div class="catalog-menu-mob__item-heading">
+					<a href="#">Collapsible plastic container</a>
+				</div>
+		
+				<div class="catalog-menu-mob__item-content">
+					<ul>
+						<li><a href="#">Euro size containers EC</a></li>
+						<li><a href="#">INSTORE nestable crates</a></li>
+						<li><a href="#">Components for crates</a></li>
+						<li><a href="#">Food crates</a></li>
+						<li><a href="#">Turning nestable crates</a></li>
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	
+
+<main class="main">
+	<div class="container">
+		<div class="row row-top">
+			<div class="col-md-6 my-auto">
+				<div class="breadcrumbs">
+					<a href="#">Main</a>
+					<a href="#">News</a>
+				</div>
+			</div>
+		
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="heading heading-main heading_md">News</div>
+				
+				<div class="news-tags">
+					<a href="#">Exhibitions</a>
+					<a href="#">New</a>
+					<a href="#">Technologies</a>
+					<a href="#">Production</a>
+					<a href="#">Events</a>
+					<a href="#">Story</a>
+					<a href="#">Conferences</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">	
+				<div class="news-card">
+					<a href="#" class="news-card__img"><img src="images/dist/img.jpg" alt=""></a>
+
+					<div class="news-card__content">
+						<div class="news-card__date">07.02.2024</div>
+						<div class="news-card__title">
+							<a href="#">Exhibitions in February</a>
+						</div>
+						
+						<div class="news-card__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+						</div>
+
+						<div class="news-card__bottom">
+							<div class="tags">
+								<a href="#">tag</a>
+								<a href="#">tag 2</a>
+								<a href="#">tag 3</a>
+							</div>
+
+							<a href="#" class="more">
+								<span>More</span>
+								<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.4238 14.8993C11.2734 14.8993 11.123 14.8438 11.0042 14.7251C10.7746 14.4955 10.7746 14.1155 11.0042 13.8859L15.3901 9.50009L11.0042 5.11426C10.7746 4.88468 10.7746 4.50468 11.0042 4.27509C11.2338 4.04551 11.6138 4.04551 11.8434 4.27509L16.6488 9.08051C16.8784 9.31009 16.8784 9.69009 16.6488 9.91968L11.8434 14.7251C11.7246 14.8438 11.5742 14.8993 11.4238 14.8993Z" fill="#FF0000"/>
+									<path d="M16.0946 10.0938H2.77087C2.44629 10.0938 2.17712 9.82458 2.17712 9.5C2.17712 9.17542 2.44629 8.90625 2.77087 8.90625H16.0946C16.4192 8.90625 16.6884 9.17542 16.6884 9.5C16.6884 9.82458 16.4192 10.0938 16.0946 10.0938Z" fill="#FF0000"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6">	
+				<div class="news-card">
+					<a href="#" class="news-card__img"><img src="images/dist/img.jpg" alt=""></a>
+
+					<div class="news-card__content">
+						<div class="news-card__date">07.02.2024</div>
+						<div class="news-card__title">
+							<a href="#">Exhibitions in February</a>
+						</div>
+						
+						<div class="news-card__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+						</div>
+
+						<div class="news-card__bottom">
+							<div class="tags">
+								<a href="#">tag</a>
+								<a href="#">tag 2</a>
+								<a href="#">tag 3</a>
+							</div>
+
+							<a href="#" class="more">
+								<span>More</span>
+								<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.4238 14.8993C11.2734 14.8993 11.123 14.8438 11.0042 14.7251C10.7746 14.4955 10.7746 14.1155 11.0042 13.8859L15.3901 9.50009L11.0042 5.11426C10.7746 4.88468 10.7746 4.50468 11.0042 4.27509C11.2338 4.04551 11.6138 4.04551 11.8434 4.27509L16.6488 9.08051C16.8784 9.31009 16.8784 9.69009 16.6488 9.91968L11.8434 14.7251C11.7246 14.8438 11.5742 14.8993 11.4238 14.8993Z" fill="#FF0000"/>
+									<path d="M16.0946 10.0938H2.77087C2.44629 10.0938 2.17712 9.82458 2.17712 9.5C2.17712 9.17542 2.44629 8.90625 2.77087 8.90625H16.0946C16.4192 8.90625 16.6884 9.17542 16.6884 9.5C16.6884 9.82458 16.4192 10.0938 16.0946 10.0938Z" fill="#FF0000"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="small-card">
+					<div class="small-card__img"><a href="#"><img src="images/dist/new.jpg" alt=""></a></div>
+
+					<div class="small-card__content">
+						<div class="small-card__date">07.02.2024</div>
+						<div class="small-card__title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></div>
+					
+						<div class="small-card__text">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to...</div>
+						<div class="tags">
+							<a href="#">tag</a>
+							<a href="#">tag 2</a>
+							<a href="#">tag 3</a>
+						</div>
+					</div>
+
+					<div class="small-card__arr">
+						<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.4237 14.3674C11.2733 14.3674 11.1229 14.314 11.0042 14.1998C10.7746 13.9788 10.7746 13.6132 11.0042 13.3922L15.39 9.17175L11.0042 4.95126C10.7746 4.73033 10.7746 4.36465 11.0042 4.14372C11.2337 3.9228 11.6137 3.9228 11.8433 4.14372L16.6487 8.76798C16.8783 8.98891 16.8783 9.35459 16.6487 9.57552L11.8433 14.1998C11.7246 14.314 11.5742 14.3674 11.4237 14.3674Z" fill="#FF0000"/>
+							<path d="M16.0946 9.74307H2.77081C2.44623 9.74307 2.17706 9.48406 2.17706 9.17171C2.17706 8.85936 2.44623 8.60034 2.77081 8.60034H16.0946C16.4191 8.60034 16.6883 8.85936 16.6883 9.17171C16.6883 9.48406 16.4191 9.74307 16.0946 9.74307Z" fill="#FF0000"/>
+						</svg>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="small-card">
+					<div class="small-card__img"><a href="#"><img src="images/dist/new.jpg" alt=""></a></div>
+
+					<div class="small-card__content">
+						<div class="small-card__date">07.02.2024</div>
+						<div class="small-card__title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></div>
+					
+						<div class="small-card__text">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to...</div>
+						<div class="tags">
+							<a href="#">tag</a>
+							<a href="#">tag 2</a>
+							<a href="#">tag 3</a>
+						</div>
+					</div>
+
+					<div class="small-card__arr">
+						<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.4237 14.3674C11.2733 14.3674 11.1229 14.314 11.0042 14.1998C10.7746 13.9788 10.7746 13.6132 11.0042 13.3922L15.39 9.17175L11.0042 4.95126C10.7746 4.73033 10.7746 4.36465 11.0042 4.14372C11.2337 3.9228 11.6137 3.9228 11.8433 4.14372L16.6487 8.76798C16.8783 8.98891 16.8783 9.35459 16.6487 9.57552L11.8433 14.1998C11.7246 14.314 11.5742 14.3674 11.4237 14.3674Z" fill="#FF0000"/>
+							<path d="M16.0946 9.74307H2.77081C2.44623 9.74307 2.17706 9.48406 2.17706 9.17171C2.17706 8.85936 2.44623 8.60034 2.77081 8.60034H16.0946C16.4191 8.60034 16.6883 8.85936 16.6883 9.17171C16.6883 9.48406 16.4191 9.74307 16.0946 9.74307Z" fill="#FF0000"/>
+						</svg>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="small-card">
+					<div class="small-card__img"><a href="#"><img src="images/dist/new.jpg" alt=""></a></div>
+
+					<div class="small-card__content">
+						<div class="small-card__date">07.02.2024</div>
+						<div class="small-card__title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></div>
+					
+						<div class="small-card__text">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to...</div>
+						<div class="tags">
+							<a href="#">tag</a>
+							<a href="#">tag 2</a>
+							<a href="#">tag 3</a>
+						</div>
+					</div>
+
+					<div class="small-card__arr">
+						<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.4237 14.3674C11.2733 14.3674 11.1229 14.314 11.0042 14.1998C10.7746 13.9788 10.7746 13.6132 11.0042 13.3922L15.39 9.17175L11.0042 4.95126C10.7746 4.73033 10.7746 4.36465 11.0042 4.14372C11.2337 3.9228 11.6137 3.9228 11.8433 4.14372L16.6487 8.76798C16.8783 8.98891 16.8783 9.35459 16.6487 9.57552L11.8433 14.1998C11.7246 14.314 11.5742 14.3674 11.4237 14.3674Z" fill="#FF0000"/>
+							<path d="M16.0946 9.74307H2.77081C2.44623 9.74307 2.17706 9.48406 2.17706 9.17171C2.17706 8.85936 2.44623 8.60034 2.77081 8.60034H16.0946C16.4191 8.60034 16.6883 8.85936 16.6883 9.17171C16.6883 9.48406 16.4191 9.74307 16.0946 9.74307Z" fill="#FF0000"/>
+						</svg>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="small-card">
+					<div class="small-card__img"><a href="#"><img src="images/dist/new.jpg" alt=""></a></div>
+
+					<div class="small-card__content">
+						<div class="small-card__date">07.02.2024</div>
+						<div class="small-card__title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></div>
+					
+						<div class="small-card__text">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to...</div>
+						<div class="tags">
+							<a href="#">tag</a>
+							<a href="#">tag 2</a>
+							<a href="#">tag 3</a>
+						</div>
+					</div>
+
+					<div class="small-card__arr">
+						<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.4237 14.3674C11.2733 14.3674 11.1229 14.314 11.0042 14.1998C10.7746 13.9788 10.7746 13.6132 11.0042 13.3922L15.39 9.17175L11.0042 4.95126C10.7746 4.73033 10.7746 4.36465 11.0042 4.14372C11.2337 3.9228 11.6137 3.9228 11.8433 4.14372L16.6487 8.76798C16.8783 8.98891 16.8783 9.35459 16.6487 9.57552L11.8433 14.1998C11.7246 14.314 11.5742 14.3674 11.4237 14.3674Z" fill="#FF0000"/>
+							<path d="M16.0946 9.74307H2.77081C2.44623 9.74307 2.17706 9.48406 2.17706 9.17171C2.17706 8.85936 2.44623 8.60034 2.77081 8.60034H16.0946C16.4191 8.60034 16.6883 8.85936 16.6883 9.17171C16.6883 9.48406 16.4191 9.74307 16.0946 9.74307Z" fill="#FF0000"/>
+						</svg>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="small-card">
+					<div class="small-card__img"><a href="#"><img src="images/dist/new.jpg" alt=""></a></div>
+
+					<div class="small-card__content">
+						<div class="small-card__date">07.02.2024</div>
+						<div class="small-card__title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></div>
+					
+						<div class="small-card__text">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to...</div>
+						<div class="tags">
+							<a href="#">tag</a>
+							<a href="#">tag 2</a>
+							<a href="#">tag 3</a>
+						</div>
+					</div>
+
+					<div class="small-card__arr">
+						<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.4237 14.3674C11.2733 14.3674 11.1229 14.314 11.0042 14.1998C10.7746 13.9788 10.7746 13.6132 11.0042 13.3922L15.39 9.17175L11.0042 4.95126C10.7746 4.73033 10.7746 4.36465 11.0042 4.14372C11.2337 3.9228 11.6137 3.9228 11.8433 4.14372L16.6487 8.76798C16.8783 8.98891 16.8783 9.35459 16.6487 9.57552L11.8433 14.1998C11.7246 14.314 11.5742 14.3674 11.4237 14.3674Z" fill="#FF0000"/>
+							<path d="M16.0946 9.74307H2.77081C2.44623 9.74307 2.17706 9.48406 2.17706 9.17171C2.17706 8.85936 2.44623 8.60034 2.77081 8.60034H16.0946C16.4191 8.60034 16.6883 8.85936 16.6883 9.17171C16.6883 9.48406 16.4191 9.74307 16.0946 9.74307Z" fill="#FF0000"/>
+						</svg>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="small-card">
+					<div class="small-card__img"><a href="#"><img src="images/dist/new.jpg" alt=""></a></div>
+
+					<div class="small-card__content">
+						<div class="small-card__date">07.02.2024</div>
+						<div class="small-card__title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a></div>
+					
+						<div class="small-card__text">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to...</div>
+						<div class="tags">
+							<a href="#">tag</a>
+							<a href="#">tag 2</a>
+							<a href="#">tag 3</a>
+						</div>
+					</div>
+
+					<div class="small-card__arr">
+						<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.4237 14.3674C11.2733 14.3674 11.1229 14.314 11.0042 14.1998C10.7746 13.9788 10.7746 13.6132 11.0042 13.3922L15.39 9.17175L11.0042 4.95126C10.7746 4.73033 10.7746 4.36465 11.0042 4.14372C11.2337 3.9228 11.6137 3.9228 11.8433 4.14372L16.6487 8.76798C16.8783 8.98891 16.8783 9.35459 16.6487 9.57552L11.8433 14.1998C11.7246 14.314 11.5742 14.3674 11.4237 14.3674Z" fill="#FF0000"/>
+							<path d="M16.0946 9.74307H2.77081C2.44623 9.74307 2.17706 9.48406 2.17706 9.17171C2.17706 8.85936 2.44623 8.60034 2.77081 8.60034H16.0946C16.4191 8.60034 16.6883 8.85936 16.6883 9.17171C16.6883 9.48406 16.4191 9.74307 16.0946 9.74307Z" fill="#FF0000"/>
+						</svg>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row row-pagination">
+			<div class="col-md-12">
+				<div class="pagination">
+					<a href="#" class="prev">
+						<svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.28397 16L1.17009 9.01271C0.786432 8.57424 0.786432 7.91954 1.17009 7.48107L7.28397 0.49378" stroke="#FF0000" stroke-width="0.969139" stroke-linecap="round"/>
+						</svg>
+					</a>
+
+					<span class="current">1</span>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<span class="more">...</span>
+					<a href="#">10</a>
+					<a href="#">11</a>
+
+					<a href="#" class="next">
+						<svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.716029 16L6.82991 9.01271C7.21357 8.57424 7.21357 7.91954 6.82991 7.48107L0.716028 0.493781" stroke="#FF0000" stroke-width="0.969139" stroke-linecap="round"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-6">
+					<div class="logo"><img src="images/dist/logo.svg" alt=""></div>
+
+					<div class="mob-contacts">
+						<div class="mail">
+							<a href="mailto:info@iplastindustries.com">info@iplastindustries.com</a>
+						</div>
+	
+						<div class="call">
+							<a href="#">Request a call</a>
+						</div>
+						
+						<ul class="soc">
+							<li>
+								<a href="#">
+									<svg class="icon" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+										<g fill="none" fill-rule="evenodd">
+											<path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" fill="#9d9d9d"></path>
+											<path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFF"></path>
+										</g>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-8 col-6">
+					<div class="menus">
+						<nav>
+							<ul>
+								<li>» <a href="#">About</a></li>
+								<li>» <a href="#">Production and Technology</a></li>
+								<li>» <a href="#">Quality Management Policy</a></li>
+								<li>» <a href="#">Career in the company</a></li>
+								<li>» <a href="#">Plastic molding</a></li>
+								<li>» <a href="#">Our team</a></li>
+							</ul>
+						</nav>
+					
+						<nav>
+							<ul>
+								<li>» <a href="#">Exhibitions</a></li>
+								<li>» <a href="#">Rent (pooling) containers</a></li>
+								<li>» <a href="#">Purchasing of raw materials</a></li>
+								<li>» <a href="#">Development of products from scratch</a></li>
+								<li>» <a href="#">Buy PP and HDPE</a></li>
+								<li>» <a href="#">Contacts</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-contacts">
+					<div class="mail">
+						<a href="mailto:info@iplastindustries.com">info@iplastindustries.com</a>
+					</div>
+
+					<div class="call">
+						<a href="#">Request a call</a>
+					</div>
+					
+					<ul class="soc">
+						<li>
+							<a href="#">
+								<svg class="icon" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+									<g fill="none" fill-rule="evenodd">
+										<path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" fill="#9d9d9d"></path>
+										<path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFF"></path>
+									</g>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copyright">
+			4313 Road 118 - 3Rd Industrial Area Unit No 2405 Al Jubail 35729 -<br> 7651 Kingdom of Saudi Arabia © 2023 All Rights Reserved
+			<div class="copyright"><a href="#">Privacy policy</a></div>
+		</div>
+	</footer>
+
+
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
