@@ -302,6 +302,14 @@
             padding-top: 25px
             max-height: 225px
             overflow-y: auto
+            &::-webkit-scrollbar
+                width: 3px
+            &::-webkit-scrollbar-track
+                background: white
+
+            &::-webkit-scrollbar-thumb
+                background: $accent
+
             ul
                 margin-bottom: 20px
                 li
