@@ -19,6 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if(document.querySelector('.gallery-slider')) {
+        var swiper = new Swiper(".gallery-slider-inner", {
+            navigation: {
+                nextEl: ".gallery-slider .swiper-button-next",
+                prevEl: ".gallery-slider .swiper-button-prev",
+            }
+        });
+    }
+    
+
     if(document.querySelector('.product-slider')) {
 
         document.querySelectorAll('.product-slider-inner').forEach((slider) => {

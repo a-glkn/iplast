@@ -72,6 +72,39 @@
         right: -50px !important
         z-index: 10
 
+.gallery-slider
+    position: relative
+    &-inner
+        overflow: hidden
+    &__item
+        position: relative
+        text-align: center
+        img
+            max-width: 100%
+            height: auto
+    .swiper-notification
+        display: none
+
+    .swiper-button-prev, .swiper-button-next
+        width: 40px
+        height: 40px
+        top: 50% !important
+        margin-top: -20px
+        opacity: 1 !important
+        &:after
+            display: none
+    .swiper-button-prev
+        position: absolute
+        left: 0 !important
+        z-index: 10
+        svg
+            transform: rotate(180deg)
+
+    .swiper-button-next
+        position: absolute
+        right: 0 !important
+        z-index: 10
+
 .section-intro
     padding-top: 140px
     padding-bottom: 120px
@@ -154,6 +187,19 @@
 .section-call
     padding-top: 60px
     padding-bottom: 34px
+    &_inner
+        padding-bottom: 80px
+    .heading
+        margin-top: 80px
+    .form-block
+        border: 1px solid #FF0000
+        padding: 53px 56px
+        border-radius: 20px
+
+    .heading-mob
+        display: none
+
+.row-call
     .heading
         margin-top: 80px
     .form-block
@@ -193,6 +239,33 @@
             text-align: right
     .row-desc
         margin-top: 105px
+
+    .video
+        border-radius: 20px
+        overflow: hidden
+        margin: 3em 0
+        position: relative
+        text-align: center
+        img
+            max-width: 100%
+            height: auo
+        &__play
+            position: absolute
+            width: 78px
+            height: 80px
+            cursor: pointer
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 2
+            svg
+                path, rect
+                    transition: .3s ease
+            &:hover
+                svg
+                    path, rect
+                        stroke: $accent
+
     .icon-print
         display: inline-flex
         font-style: normal
@@ -205,7 +278,55 @@
         svg, span
             margin-top: auto
             margin-bottom: auto
-
+    .row-call
+        padding-top: 3em
+        padding-bottom: 3em
+    .typo
+        ul
+            li
+                font-style: normal
+                font-weight: 400
+                font-size: 20px
+                line-height: 1.4
+                color: #333333
+                margin-bottom: 0.7em
+                &:last-child
+                    margin-bottom: 0
+                
+        .list
+            list-style: none
+            li
+                position: relative
+                padding-left: 34px
+                &:before
+                    width: 24px
+                    height: 24px
+                    content: ''
+                    position: absolute
+                    top: 2px
+                    left: 0
+                    background-repeat: no-repeat
+                    background-position: 0 0
+                    background-image: url(../images/dist/arr-list.svg)
+        p
+            font-style: normal
+            font-weight: 400
+            font-size: 20px
+            line-height: 1.4
+            color: #333333
+            margin: 1em 0
+        h2
+            margin: 0
+            margin-bottom: 0.5em
+            font-style: normal
+            font-weight: 500
+            font-size: 32px
+            line-height: 1.22
+            display: flex
+            align-items: center
+            color: #000000
+        .gallery-slider, .table
+            margin: 3em 0
     .row-product
         margin-top: 70px
     .product-meta
@@ -503,7 +624,10 @@
             bottom: 0 !important
             width: 100% !important
 
-    .section-call 
+    .section-call
+        .heading
+            margin-top: 0
+    .row-call
         .heading
             margin-top: 0
     .section-news
@@ -527,7 +651,14 @@
         .service
             margin-bottom: 20px
 
-    .section-call 
+    .section-call
+        .heading-mob
+            display: block
+            margin-bottom: 30px
+        .heading-desk
+            display: none
+
+    .row-call
         .heading-mob
             display: block
             margin-bottom: 30px
@@ -590,11 +721,31 @@
             margin-top: 30px
         .row-pagination
             margin-top: 30px
+
+        .typo
+            ul
+                li
+                    font-size: 16px
+            .list
+                li
+                    &:before
+                        top: 0px
+            p
+                font-size: 16px
+            h2
+                font-size: 24px
+            .gallery-slider, .table
+                margin: 2em 0
+    .main_inner
+        padding-bottom: 0
 +media-breakpoint-down(md)
     .section-intro
         padding-top: 50px
         padding-bottom: 50px
-    .section-call 
+    .section-call
+        .form-block
+            padding: 20px 15px
+    .row-call
         .form-block
             padding: 20px 15px
     .intro-slider
@@ -683,6 +834,9 @@
 
                 &:last-child
                     margin-right: 0
+        .typo
+            h2
+                font-size: 20px
 +media-breakpoint-down(sm)
     .main 
         .product-contacts
