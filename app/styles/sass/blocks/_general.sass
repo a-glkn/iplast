@@ -760,7 +760,9 @@ a.btn
             max-width: 100%
             max-height: 100%
             height: auto
-
+    &_single
+        border: 0
+        border-radius: 0
 .swiper-thumb
     .swiper-slide
         border: 1px solid #D8D8D8
@@ -801,6 +803,56 @@ a.btn
             border-color: $accent
 
 
+.gal
+    border: 1px solid #D8D8D8
+    border-radius: 20px
+    background-color: #fff
+    display: block
+    text-decoration: none
+    overflow: hidden
+    padding-bottom: 30px
+    &__img
+        img
+            max-width: 100%
+            height: auto
+    &__date
+        padding-left: 40px
+        padding-right: 40px
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 1.25
+        color: #8D8C8C
+        margin-top: 30px
+
+    &__title
+        margin-top: 10px
+        padding-left: 40px
+        padding-right: 70px
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 1.2
+        color: #000000
+        min-height: 2.4em
+        position: relative
+        transition: .3s ease
+        &:after
+            position: absolute
+            top: 2px
+            right: 40px
+            content: ''
+            display: block
+            width: 19px
+            height: 18px
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-image: url(../images/dist/arrow-right.svg)
+
+    &:hover
+        .gal
+            &__title
+                color: $accent
 .pagination
     display: flex
     justify-content: center

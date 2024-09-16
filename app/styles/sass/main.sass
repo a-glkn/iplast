@@ -159,6 +159,8 @@
         right: 0 !important
         z-index: 10
 
+
+ 
 .section-using
     .heading
         margin-bottom: 50px
@@ -224,9 +226,51 @@
     .row-mob-btn
         display: none
 
+.gallery
+    position: relative
+    .swiper-button-prev, .swiper-button-next
+        width: 40px
+        height: 40px
+        top: 50% !important
+        border: 1px solid #FF0000
+        margin-top: -20px
+        opacity: 1 !important
+        border-radius: 50%
+        &:after
+            display: none
+    .swiper-button-prev
+        position: absolute
+        left: 0 !important
+        z-index: 10
+
+    .swiper-button-next
+        position: absolute
+        right: 0 !important
+        z-index: 10
+        transform: rotate(180deg)
+    .swiper-gallery .swiper-slide
+        height: auto !important
+        padding: 0
+    .swiper-gallery
+        img
+            border-radius: 20px
+            max-width: 100%
+            height: auto
+            top: 0
+
+    .swiper-thumb
+        margin-top: 50px
+        .swiper-slide
+            height: 228px
+.section-gallery
+    padding-top: 50px
+    padding-bottom: 150px
+
 .main
     padding-top: 50px
     padding-bottom: 75px
+    &_gal
+        padding-bottom: 32px
     .row-pagination
         margin-top: 90px
     .heading-main
@@ -239,7 +283,8 @@
             text-align: right
     .row-desc
         margin-top: 105px
-
+    .gallery
+        margin-top: 50px
     .video
         border-radius: 20px
         overflow: hidden
@@ -738,6 +783,18 @@
                 margin: 2em 0
     .main_inner
         padding-bottom: 0
+
+    .gallery
+        .swiper-thumb
+            margin-top: 30px
+            margin-bottom: 50px
+            .swiper-slide
+                height: auto !important
+
+    .section-gallery
+        padding-bottom: 70px
+        .gal
+            margin-bottom: 30px
 +media-breakpoint-down(md)
     .section-intro
         padding-top: 50px
@@ -837,6 +894,8 @@
         .typo
             h2
                 font-size: 20px
+
+
 +media-breakpoint-down(sm)
     .main 
         .product-contacts

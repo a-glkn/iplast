@@ -116,16 +116,25 @@ document.addEventListener('DOMContentLoaded', () => {
         var swiperThumb = new Swiper(".swiper-thumb", {
             loop: true,
             spaceBetween: 10,
-            slidesPerView: 3,
+            slidesPerView:  document.querySelector('.swiper-gallery_single') ? 3 : 3,
             freeMode: false,
-            watchSlidesProgress: true,
+            breakpoints: document.querySelector('.swiper-gallery_single') ? {
+                992: {
+                    slidesPerView: 5
+                }
+            } : {
+                992: {
+                    slidesPerView: 3
+                }
+            }
         });
-        var swiperGallery = new Swiper(".swiper-gallery", {
+        
+        new Swiper(".swiper-gallery", {
             loop: true,
             spaceBetween: 10,
             navigation: {
-              nextEl: ".product-item-slider .swiper-button-next",
-              prevEl: ".product-item-slider .swiper-button-prev",
+              nextEl:  document.querySelector('.swiper-gallery_single') ? ".gallery .swiper-button-next" : ".product-item-slider .swiper-button-next",
+              prevEl:  document.querySelector('.swiper-gallery_single') ? ".gallery .swiper-button-prev" : ".product-item-slider .swiper-button-prev",
             },
             thumbs: {
               swiper: swiperThumb
