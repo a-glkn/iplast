@@ -41,6 +41,8 @@
     border: 0
     height: 60px
     white-space: nowrap
+    &_w-auto
+        width: auto
     &_icon
         display: inline-flex
         svg
@@ -150,6 +152,51 @@ a.btn
 .py
     padding-top: 140px
     padding-bottom: 140px
+
+
+.delivery
+    border-radius: 20px
+    border: 1px solid #D8D8D8
+    overflow: hidden
+    height: 100%
+    padding-bottom: 37px
+    &__img
+        img
+            max-width: 100%
+            height: auto
+    &__title
+        margin-top: 39px
+        color: #000
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 1.21
+        margin-left: 40px
+        margin-right: 40px
+    &__text
+        margin-top: 10px
+        margin-left: 40px
+        margin-right: 40px
+        position: relative
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        &.warning
+            padding-right: 32px
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                right: 0
+                top: 50%
+                margin-top: -12px
+                width: 24px
+                height: 24px
+                background-repeat: no-repeat
+                background-position: 0 0
+                background-image: url(../images/dist/warning.svg)
 
 
 .news-card
@@ -622,6 +669,18 @@ a.btn
                     th:last-child
                         border-right: 0
 
+.adv
+    padding: 40px
+    border: 1px solid #D8D8D8
+    border-radius: 20px
+    &__text
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 1.21
+        color: #000000
+        margin-top: 21px
+
 .item
     border: 1px solid #E6E6E6
     border-radius: 20px
@@ -629,7 +688,26 @@ a.btn
     overflow: hidden
     position: relative
     padding: 20px
+    padding-top: 30px
     padding-bottom: 117px
+    height: 100%
+    &__status
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 17px
+        color: #28A345
+        position: absolute
+        display: flex
+        top: 20px
+        left: 20px
+        svg
+            margin-right: 8px
+            margin-top: auto
+            margin-bottom: auto
+        span
+            margin-top: auto
+            margin-bottom: auto
     &__img
         text-align: center
         display: block
@@ -638,6 +716,7 @@ a.btn
         img
             max-width: 100%
             height: auto
+            max-height: 180px
     &__art
         margin-top: 17px
         font-family: $headfont
@@ -1052,6 +1131,11 @@ a.btn
             padding: 5px 10px
             &:last-child
                 margin-right: 0
+
+    .adv
+        padding: 30px
+        &__text
+            font-size: 20px
 +media-breakpoint-down(md)
     .form 
         label

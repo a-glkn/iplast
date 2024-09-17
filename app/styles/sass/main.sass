@@ -108,6 +108,18 @@
 .section-intro
     padding-top: 140px
     padding-bottom: 120px
+    &_landing
+        padding-bottom: 100px
+        .heading
+            margin-bottom: 20px
+        img
+            max-width: 100%
+            height: auto
+            margin-top: -100px
+
+        .btn
+            margin-top: 50px
+
 
 .section-service
     .heading
@@ -188,7 +200,7 @@
 
 .section-call
     padding-top: 60px
-    padding-bottom: 34px
+    padding-bottom: 60px
     &_inner
         padding-bottom: 80px
     .heading
@@ -197,6 +209,7 @@
         border: 1px solid #FF0000
         padding: 53px 56px
         border-radius: 20px
+        background-color: #fff
 
     .heading-mob
         display: none
@@ -226,6 +239,25 @@
     .row-mob-btn
         display: none
 
+.section-cat
+    .row-heading
+        margin-bottom: 50px
+        .col-btn
+            text-align: right
+
+.section-advantages
+    .adv
+        margin-bottom: 20px
+        margin-left: 256px
+    .heading
+        margin-bottom: 20px
+
+.section-delivery
+    .heading
+        margin-bottom: 20px
+    .col-item
+        margin-top: 50px
+
 .gallery
     position: relative
     .swiper-button-prev, .swiper-button-next
@@ -236,6 +268,7 @@
         margin-top: -20px
         opacity: 1 !important
         border-radius: 50%
+        background-color: #fff
         &:after
             display: none
     .swiper-button-prev
@@ -338,21 +371,7 @@
                 &:last-child
                     margin-bottom: 0
                 
-        .list
-            list-style: none
-            li
-                position: relative
-                padding-left: 34px
-                &:before
-                    width: 24px
-                    height: 24px
-                    content: ''
-                    position: absolute
-                    top: 2px
-                    left: 0
-                    background-repeat: no-repeat
-                    background-position: 0 0
-                    background-image: url(../images/dist/arr-list.svg)
+
         p
             font-style: normal
             font-weight: 400
@@ -590,6 +609,40 @@
     .row-heading
         margin-bottom: 50px
 
+.list
+    list-style: none
+    li
+        position: relative
+        padding-left: 34px
+        &:before
+            width: 24px
+            height: 24px
+            content: ''
+            position: absolute
+            top: 2px
+            left: 0
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-image: url(../images/dist/arr-list.svg)
+    &_lg
+        li
+            font-size: 24px
+            &:before
+                top: 50%
+                margin-top: -12px
+
+.section-list
+    padding-top: 140px
+    padding-bottom: 140px
+    .heading_lg
+        margin-bottom: 50px
+    .list
+        margin-left: 256px
+        li
+            margin-bottom: 25px
+            &:last-child
+                margin-bottom: 0
+
 +media-breakpoint-down(xl)
     .section-intro
         padding-top: 80px
@@ -641,6 +694,12 @@
             font-size: 22px
             &:after
                 display: none
+
+    .section-intro
+        &_landing
+            padding-bottom: 0
+            img
+                margin-top: -50px
 +media-breakpoint-down(lg)
     .section-map
         .geo-icon
@@ -675,7 +734,7 @@
     .row-call
         .heading
             margin-top: 0
-    .section-news
+    .section-news, .section-cat
         .row-heading
             margin-bottom: 30px
         .col-btn
@@ -686,7 +745,8 @@
             text-align: center
         .news-card
             margin-bottom: 10px
-
+        .col-item
+            margin-bottom: 20px
         .small-card
             display: none
             margin-bottom: 10px
@@ -751,6 +811,7 @@
 
     .section-cross-sales
         .item
+            height: auto
             margin-bottom: 30px
 
     .main
@@ -771,10 +832,7 @@
             ul
                 li
                     font-size: 16px
-            .list
-                li
-                    &:before
-                        top: 0px
+            
             p
                 font-size: 16px
             h2
@@ -795,6 +853,41 @@
         padding-bottom: 70px
         .gal
             margin-bottom: 30px
+
+    .list
+        li
+            &:before
+                top: 0px
+
+        &_lg
+            li
+                &:before
+                    top: 50%
+
+    .section-list
+        padding-top: 40px
+        padding-bottom: 80px
+        .list
+            margin-left: 0
+
+    .list_lg li
+        font-size: 20px
+
+    .section-intro
+        &_landing
+            padding-bottom: 50px
+            img
+                display: block
+                margin-left: auto
+                margin-right: auto
+                max-width: 300px
+                margin-top: 30px
+
+    .section-advantages
+        .adv
+            margin-left: 0
+    .section-delivery
+        padding-bottom: 100px
 +media-breakpoint-down(md)
     .section-intro
         padding-top: 50px
