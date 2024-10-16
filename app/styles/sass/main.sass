@@ -326,7 +326,6 @@
     .video
         border-radius: 20px
         overflow: hidden
-        margin: 3em 0
         position: relative
         text-align: center
         img
@@ -365,18 +364,48 @@
         padding-top: 3em
         padding-bottom: 3em
     .typo
-        ul
-            li
-                font-style: normal
-                font-weight: 400
-                font-size: 20px
-                line-height: 1.4
-                color: #333333
-                margin-bottom: 0.7em
-                &:last-child
-                    margin-bottom: 0
-                
+        font-size: 20px
+        ol
+            ul
+                margin-left: 30px
 
+        ul
+            ol
+                margin-left: 30px
+        img
+            max-width: 100%
+            height: auto
+            margin: 2em 0
+            &.centred
+                display: block
+                margin-left: auto
+                margin-right: auto
+        ol
+            list-style: none
+            margin: 0.5em 0
+            list-style-type: decimal
+            list-style-position: inside
+            li
+                margin: 0.5em 0
+            li::marker
+                color: red
+        ul
+            list-style: none
+            margin: 0.5em 0
+            li
+                position: relative
+                padding-left: 34px
+                margin: 0.5em 0
+                &:before
+                    width: 24px
+                    height: 24px
+                    content: ''
+                    position: absolute
+                    top: 2px
+                    left: 0
+                    background-repeat: no-repeat
+                    background-position: 0 0
+                    background-image: url(../images/dist/arr-list.svg)
         p
             font-style: normal
             font-weight: 400
@@ -394,7 +423,7 @@
             display: flex
             align-items: center
             color: #000000
-        .gallery-slider, .table
+        .table
             margin: 3em 0
     .row-product
         margin-top: 70px
@@ -831,7 +860,8 @@
             margin-top: 30px
 
         .typo
-            ul
+            font-size: 16px
+            ul, ol
                 li
                     font-size: 16px
             
@@ -839,7 +869,7 @@
                 font-size: 16px
             h2
                 font-size: 24px
-            .gallery-slider, .table
+            .table
                 margin: 2em 0
     .main_inner
         padding-bottom: 0
@@ -856,7 +886,7 @@
         .gal
             margin-bottom: 30px
 
-    .list
+    .list, .typo ul
         li
             &:before
                 top: 0px
