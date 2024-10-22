@@ -26,6 +26,40 @@
     line-height: 1.21
     color: #000000 
 
+.warn
+    display: block
+    width: 24px
+    height: 24px
+    background-repeat: no-repeat
+    background-position: 0 0
+    background-image: url(../images/dist/warning.svg)
+
+
+
+.tooltip 
+    position: relative
+        
+
+.tooltip-box 
+    display: none
+    position: absolute
+    background-color: black
+    color: white
+    padding: 5px
+    border-radius: 4px
+    font-size: 12px
+    white-space: nowrap
+    bottom: 100%
+    left: 50%
+    transform: translateX(-50%)
+    margin-bottom: 5px
+    z-index: 10
+
+
+.tooltip:hover .tooltip-box 
+    display: block
+        
+
 
 .btn
     padding: 0 25px
@@ -185,18 +219,12 @@ a.btn
         color: #000000
         &.warning
             padding-right: 32px
-            &:after
-                content: ''
-                display: block
+            .warn
                 position: absolute
                 right: 0
                 top: 50%
                 margin-top: -12px
-                width: 24px
-                height: 24px
-                background-repeat: no-repeat
-                background-position: 0 0
-                background-image: url(../images/dist/warning.svg)
+            
 
 
 .news-card

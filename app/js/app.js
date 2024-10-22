@@ -142,5 +142,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     }
+
+    if(document.querySelectorAll('.tooltip')) {
+        document.querySelectorAll('.tooltip').forEach(function(tooltip) {
+            const tooltipText = tooltip.getAttribute('data-tooltip');
+            
+            // Создаем элемент подсказки
+            const tooltipBox = document.createElement('div');
+            tooltipBox.className = 'tooltip-box';
+            tooltipBox.innerText = tooltipText;
+
+            // Вставляем элемент внутри .tooltip
+            tooltip.appendChild(tooltipBox);
+
+            // Показываем подсказку при наведении
+            tooltip.addEventListener('mouseenter', function() {
+                tooltipBox.style.display = 'block';
+            });
+
+            // Скрываем подсказку, когда курсор уходит
+            tooltip.addEventListener('mouseleave', function() {
+                tooltipBox.style.display = 'none';
+            });
+        });
+    }
+    
     
 });
