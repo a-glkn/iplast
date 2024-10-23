@@ -166,6 +166,23 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    if(document.querySelector('.btn_minus') && document.querySelector('.btn_plus')) {
+        document.querySelector('.btn_minus').addEventListener('click', function() {
+            const input = document.querySelector('.product-meta__quantity input');
+            let value = parseInt(input.value);
     
+            if (value > 1) {
+                input.value = value - 1;
+            }
+        });
+    
+        document.querySelector('.btn_plus').addEventListener('click', function() {
+            const input = document.querySelector('.product-meta__quantity input');
+            let value = parseInt(input.value);
+    
+            input.value = value + 1;
+        });
+    }
     
 });

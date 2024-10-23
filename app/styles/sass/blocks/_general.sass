@@ -818,7 +818,7 @@ a.btn
 .product-item-slider
     .photo-360
         position: absolute
-        bottom: 22px
+        bottom: 172px 
         left: 50%
         transform: translateX(-50%)
         width: 140px
@@ -827,6 +827,7 @@ a.btn
         border-radius: 20px
         text-align: center
         cursor: pointer
+        z-index: 10
         span
             display: block
             font-style: normal
@@ -1266,6 +1267,10 @@ a.btn
             svg
                 width: 11.5px
                 height: 11.5px
+
+    .product-item-slider
+        .photo-360
+            bottom: 152px
 +media-breakpoint-down(sm)
     .swiper-gallery 
         .swiper-slide
