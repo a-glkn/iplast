@@ -1,5 +1,5 @@
-import Swiper from 'swiper/bundle';
-import Inputmask from "inputmask/dist/inputmask.es6.js";
+// import Swiper from 'swiper/bundle';
+// import Inputmask from "inputmask/dist/inputmask.es6.js";
 
 // import NiceSelect from 'nice-select2/src/js/nice-select2.js';
 // global.NiceSelect = NiceSelect;
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // var im = new Inputmask("9 999 999 99 99");
+    var im = new Inputmask("9 999 999 99 99");
     // im.mask(document.querySelector('.form__input_tel'));
 
     var togglers = document.querySelectorAll(".menu-toggler");
