@@ -93,8 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, false);
     
 
-
-
    
     var catMenuItems = document.querySelectorAll(".catalog-menu-mob__item-heading a");
 	catMenuItems.forEach((t) => {
@@ -110,38 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, false);
     });
 
-
-    if( document.querySelector('.swiper-thumb') && document.querySelector('.swiper-gallery') ) {
-
-        var swiperThumb = new Swiper(".swiper-thumb", {
-            loop: true,
-            spaceBetween: 10,
-            slidesPerView:  document.querySelector('.swiper-gallery_single') ? 3 : 3,
-            freeMode: false,
-            breakpoints: document.querySelector('.swiper-gallery_single') ? {
-                992: {
-                    slidesPerView: 5
-                }
-            } : {
-                992: {
-                    slidesPerView: 3
-                }
-            }
-        });
-        
-        new Swiper(".swiper-gallery", {
-            loop: true,
-            spaceBetween: 10,
-            navigation: {
-              nextEl:  document.querySelector('.swiper-gallery_single') ? ".gallery .swiper-button-next" : ".product-item-slider .swiper-button-next",
-              prevEl:  document.querySelector('.swiper-gallery_single') ? ".gallery .swiper-button-prev" : ".product-item-slider .swiper-button-prev",
-            },
-            thumbs: {
-              swiper: swiperThumb
-            }
-        });
-
-    }
 
     if(document.querySelectorAll('.tooltip')) {
         document.querySelectorAll('.tooltip').forEach(function(tooltip) {
