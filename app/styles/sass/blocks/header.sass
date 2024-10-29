@@ -9,7 +9,7 @@
     &__contacts
         text-align: right
         margin: auto 0
-        margin-left: 75px
+        margin-left: 44px
         .mail
             font-family: $headfont
             font-style: normal
@@ -172,35 +172,46 @@
             .geo
                 &__content
                     display: block
+
+    &__soc
+        display: flex
+        margin-left: 28px
+        ul
+            margin-top: auto
+            margin-bottom: auto
+            display: flex
+            li
+                height: 25px
+                width: 25px
+                margin-right: 5px
+                &:last-child
+                    margin-right: 0
     &__cart
         display: flex
-        min-width: 96.5px
-        max-width: 96.5px
+        min-width: 37px
+        max-width: 37px
         margin: auto 0
-        margin-left: 76px
+        margin-left: 62px
         justify-content: space-between
-        &-content
-            text-align: right
-            a
-                font-family: $headfont
-                font-style: normal
-                font-weight: 400
-                font-size: 13.3px
-                line-height: 1.2
-                color: #A0A0A0
-                text-decoration: underline
-                transition: .3s ease
-                &:hover
-                    text-decoration: none
-                    color: $accent
-            div
-                font-family: $headfont
-                font-style: normal
-                font-weight: 400
-                font-size: 12.5px
-                line-height: 1.28
-                color: #000000      
-
+        position: relative
+        text-decoration: none !important
+        &-num
+            position: absolute
+            font-family: $headfont
+            font-style: normal
+            font-weight: 700
+            font-size: 10px
+            line-height: 10px
+            letter-spacing: 0.01em
+            color: #FFFFFF
+            padding-top: 4px
+            padding-left: 6px
+            padding-right: 5px
+            padding-bottom: 3px
+            right: -1px
+            top: -2px
+            background-color: #333333
+            border-radius: 50%
     &-top
         display: flex
         justify-content: space-between
@@ -448,7 +459,7 @@
         .search-form
             margin-left: 20px
             input
-                width: 210px
+                width: 180px
         .geo
             margin-left: 20px
         &__contacts
@@ -461,7 +472,6 @@
                     >li 
                         >a
                             font-size: 14px
-
 
     .catalog-menu
         &__item
@@ -488,7 +498,8 @@
             display: none
         &__cart
             display: none
-
+        &__soc
+            display: none
         &-top
             padding-top: 0
             padding-bottom: 0
