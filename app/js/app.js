@@ -75,9 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    var im = new Inputmask("9 999 999 99 99");
-    // im.mask(document.querySelector('.form__input_tel'));
-
     var togglers = document.querySelectorAll(".menu-toggler");
 	togglers.forEach((t) => {
         t.addEventListener("click",function(e){
